@@ -8,8 +8,8 @@ function App() {
       <h1 class= "st-text st-title">
         <h1>Event</h1>
         <div class="form__group">
-          <input type="text" class="form__input" id="name" placeholder="Full name" required="" />
-          <label for="name" class="form__label">Full Name</label>
+          <input type="text" class="form__input" id="name" placeholder="Code" required="" />
+          <label for="name" class="form__label">Code</label>
         </div>
       </h1>
     </>

@@ -81,6 +81,7 @@ body, html {
   display: block;
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
+  text-align: center;
 }
 
 .form__input:placeholder-shown + .form__label {
@@ -88,4 +89,5 @@ body, html {
   visibility: hidden;
   -webkit-transform: translateY(-4rem);
   transform: translateY(-4rem);
+  text-align: center;
 }
