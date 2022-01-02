@@ -1,6 +1,6 @@
 {
-  "homepage": "http://villtuul.github.io/aaltotuuliot",
-  "name": "aaltotuuliot",
+  "homepage": "http://villtuul.github.io/tuuliot",
+  "name": "tuuliot",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
