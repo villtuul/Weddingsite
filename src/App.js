@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import backgroundImage from './background.jpeg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div class="st-image"></div>
+      <h1 class= "st-text st-title">
+        <h1>Event</h1>
+        <div class="form__group">
+          <input type="text" class="form__input" id="name" placeholder="Full name" required="" />
+          <label for="name" class="form__label">Full Name</label>
+        </div>
+      </h1>
+    </>
+
   );
 }
 
