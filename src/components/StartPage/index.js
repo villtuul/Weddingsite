@@ -27,7 +27,8 @@ const StyledBox = styled.div`
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 50%;
-    height: 20%;
+    height: calc(20vh + 50px);
+    max-height: 200px
     padding: 20px;
     text-align: center;
 `;
@@ -35,11 +36,9 @@ const StyledBox = styled.div`
 const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 15vh 0;
+  margin: 5vh 10vh;
   position: relative;
-  margin-top: 5vh;
-  
-
+    
   & > input {
     border: 0.5vh solid ${props => (props.error ? "#e77674" : "#eee")};
     border-radius: 0.25rem;
