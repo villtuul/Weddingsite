@@ -4,8 +4,8 @@ import styled from "styled-components";
 import img from "../../background.jpeg"
 
 const BackgroundImage = styled.div`
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
     background-image: url(${img});
     filter: blur(8px);
     -webkit-filter: blur(8px);
@@ -34,40 +34,41 @@ const StyledBox = styled.div`
 `;
 
 const InputContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 5vh 10vh;
-  position: relative;
     
-  & > input {
-    border: 0.5vh solid ${props => (props.error ? "#e77674" : "#eee")};
-    border-radius: 0.25rem;
-    color: white;
-    background-color: transparent;
-    outline: none;
-    padding: 12px 3px 12px 15px;
-    font-size: 16px;
-    transition: all 0.2s ease;
-    z-index: 500;
-  }
-  & > label {
-    color: #757575;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    transition: all 0.2s ease;
-    z-index: 500;
-
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 10vh;
+    position: relative;
+        
+    & > input {
+        border: 0.5vh solid ${props => (props.error ? "#e77674" : "#eee")};
+        border-radius: 0.25rem;
+        color: white;
+        background-color: transparent;
+        outline: none;
+        padding: 12px 3px 12px 15px;
+        font-size: 16px;
+        transition: all 0.2s ease;
+        z-index: 500;
+    }
+    & > label {
+        color: #757575;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        transition: all 0.2s ease;
+        z-index: 500;
+        
     ${props =>
-      props.focused &&
-      `
-      font-size: 13px;
-      transform: translateY(-23px) translateX(-5px);
-      z-index: 501;
-      background: white;
-      padding: 0 8px;
-    `}
-  }
+        props.focused &&
+        `
+        top: 5px;
+        font-size: 15px;
+        transform: translateY(-23px) translateX(-5px);
+        z-index: 501;
+        padding: 0 8px;
+        `
+    }
 `;
 /**
  * A Plaid-inspired custom input component
@@ -169,7 +170,6 @@ const StartPage = () => {
     const [value, setValue] = React.useState("");
     return (
         <div>
-        <BackgroundImage/>
         <StyledBox>
             <h1>Event</h1>
             <Input type="Code" label="Code"

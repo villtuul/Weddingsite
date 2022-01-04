@@ -1,8 +1,13 @@
-import backgroundImage from './background.jpeg';
-import './App.css';
 import Tuuliot from './components/tuuliot';
+import './App.css';
 
 function App() {
-  return (<Tuuliot/>);}
+  return (
+  <>
+  <div className='mainDiv'/>
+  <Tuuliot/>
+  </>
+  );
+}
 
 export default App;
