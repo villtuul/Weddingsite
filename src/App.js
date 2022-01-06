@@ -1,14 +1,13 @@
+import Tuuliot from './components/tuuliot';
 import './App.css';
-import React, {useState} from "react";
-import StyledBox from "./components/StyledBox.js";
 
-const Tuuliot = () => {
-    return (
-        <>
-            <div className='mainDiv'/>
-            {StyledBox}
-        </>
-    );
-};
+function App() {
+  return (
+  <>
+  <div className='mainDiv'/>
+  <Tuuliot/>
+  </>
+  );
+}
 
-export default Tuuliot;
+export default App;
