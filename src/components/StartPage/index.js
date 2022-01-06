@@ -3,17 +3,7 @@ import styled from "styled-components";
 
 import img from "../../background.jpeg"
 
-const BackgroundImage = styled.div`
-    justify-content: center;
-    align-items: center;
-    background-image: url(${img});
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-`;
+let timer = null;
 
 const StyledBox = styled.div`
     background-color: rgb(0,0,0); /* Fallback color */
@@ -105,21 +95,20 @@ const Input = ({
   };
 
   const validateValue = val => {
-    if (type === "email") {
-      // VERY simple email validation
-      if (val.indexOf("@") === -1) {
-        setError("email is invalid");
+      if (val === ""){
+        setError(null)
+      } else if (val === "tuuliot2022") {
+        setError("Correct");
       } else {
-        setError(null);
+        setError("Incorrect");
       }
-    }
-
-    // ... any other validation you could think of
-    // ... maybe even pass in an additional validation function as a prop?
   };
 
   const handleOnChange = val => {
-    validateValue(val);
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+        validateValue(val);
+        }, 1000);
     onChange(val);
   };
 
@@ -129,13 +118,12 @@ const Input = ({
       if (error) {
         return <label>{error}</label>;
       }
-
       return <label>{label}</label>;
     }
     return null;
   };
 
-  const isFocused = focused || String(value).length || type === "date";
+  const isFocused = focused || String(value).length;
 
   return (
     <InputContainer focused={isFocused} error={error}>
@@ -182,16 +170,4 @@ const StartPage = () => {
     );
 };
 export default StartPage;
-
-
-// <>
-// <div class="st-image"></div>
-// <h1 class= "st-text st-title">
-// <h1>Event</h1>
-// <div class="form__group">
-//     <input type="text" class="form__input" id="name" placeholder="Code" required="" onChange={(e) => {this.handleChange(e)}}/>
-//     <label for="name" class="form__label">Code</label>
-// </div>
-// </h1>
-// </>
 
