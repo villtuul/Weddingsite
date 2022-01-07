@@ -11,13 +11,14 @@ const StyledBox = styled.div`
     color: white;
     font-weight: bold;
     border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: ${props => (props.isLogin ? "50%":"50%")};
+    transition: all 0.5s ease;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 50%;
-    height: calc(20vh + 50px);
+    width: ${props => (props.isLogin ? "80%":"50%")};
+    height: ${props => (props.isLogin ? "50vh":"calc(20vh + 50px)")};
     max-height: 200px
     padding: 20px;
     text-align: center;
@@ -31,7 +32,7 @@ const InputContainer = styled.div`
     position: relative;
         
     & > input {
-        border: 0.5vh solid ${props => (props.error ? "#e77674" : "#eee")};
+        border: 0.5vh solid ${props => (props.error === "Incorrect" ? "#e77674" : "#eee")};
         border-radius: 0.25rem;
         color: white;
         background-color: transparent;
@@ -152,22 +153,33 @@ Input.defaultProps = {
   setRef: () => {}
 };
 
-
-
 const StartPage = () => {
     const [value, setValue] = React.useState("");
-    return (
-        <div>
-        <StyledBox>
-            <h1>Event</h1>
-            <Input type="Code" label="Code"
-                  value={value}
-                  onChange={val => setValue(val)}
-    />
-        </StyledBox>       
-    
-        </div>
-    );
+
+    if (value === "tuuliot2022"){
+     return (
+         <div>
+             <StyledBox isLogin={true}>
+                 <h1>Event</h1>
+                 <Input type="Code" label="Code"
+                        value={value}
+                        onChange={val => setValue(val)}/>
+             </StyledBox>
+         </div>
+     );
+    } else {
+        return (
+            <div>
+                <StyledBox isLogin={false}>
+                    <h1>Event</h1>
+                    <Input type="Code" label="Code"
+                           value={value}
+                           onChange={val => setValue(val)}/>
+                </StyledBox>
+            </div>
+        );
+    }
 };
+
 export default StartPage;
 

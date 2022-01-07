@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="156bd1f7-a9ea-4ccf-91c5-b20bb51b0a05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InfoPage/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/StartPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StartPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tuuliot/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +69,16 @@
       <updated>1641408259753</updated>
       <workItem from="1641408262487" duration="556000" />
       <workItem from="1641409375869" duration="17128000" />
-      <workItem from="1641474985992" duration="1928000" />
+      <workItem from="1641474985992" duration="7455000" />
     </task>
+    <task id="LOCAL-00001" summary="Added delay to password validation">
+      <created>1641481513894</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641481513894</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,5 +94,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added delay to password validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added delay to password validation" />
   </component>
 </project>
