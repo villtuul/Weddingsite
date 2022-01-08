@@ -1,0 +1,8 @@
+{
+  "HELLO": "Hi {{user}}!",
+  "PAGES": {
+    "HOME": {
+      "TITLE": "Home Page Title"
+    }
+  }
+}

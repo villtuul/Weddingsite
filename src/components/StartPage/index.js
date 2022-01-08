@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import img from "../../background.jpeg"
-
 let timer = null;
 
 const StyledBox = styled.div`
@@ -32,7 +30,8 @@ const InputContainer = styled.div`
     position: relative;
         
     & > input {
-        border: 0.5vh solid ${props => (props.error === "Incorrect" ? "#e77674" : "#eee")};
+        border: 0.5vh solid ${props => (props.validationResult === "Incorrect" ? "#e77674" :
+    (props.validationResult === "Correct" ? "#2bfd01" : "#eee"))};
         border-radius: 0.25rem;
         color: white;
         background-color: transparent;
@@ -43,7 +42,8 @@ const InputContainer = styled.div`
         z-index: 500;
     }
     & > label {
-        color: #757575;
+        color: ${props => (props.validationResult === "Incorrect" ? "#e77674" :
+    (props.validationResult === "Correct" ? "#2bfd01" : "#eee"))};
         position: absolute;
         top: 15px;
         left: 15px;
@@ -77,13 +77,14 @@ const Input = ({
   type,
   label,
   onChange,
+  setIsLogin,
   onFocus,
   onBlur,
   setRef,
   ...props
 }) => {
   const [focused, setFocused] = React.useState(false);
-  const [error, setError] = React.useState(null);
+  const [validationResult, setValidationResult] = React.useState(null);
 
   const handleOnFocus = () => {
     setFocused(true);
@@ -97,11 +98,16 @@ const Input = ({
 
   const validateValue = val => {
       if (val === ""){
-        setError(null)
+        setValidationResult(null)
+        setIsLogin(false);
       } else if (val === "tuuliot2022") {
-        setError("Correct");
+        setValidationResult("Correct");
+          timer = setTimeout(() => {
+              setIsLogin(true);
+          }, 1000);
       } else {
-        setError("Incorrect");
+        setValidationResult("Incorrect");
+        setIsLogin(false);
       }
   };
 
@@ -115,9 +121,8 @@ const Input = ({
 
   const renderLabel = () => {
     if (label) {
-      // if we have an error
-      if (error) {
-        return <label>{error}</label>;
+      if (validationResult) {
+        return <label>{validationResult}</label>;
       }
       return <label>{label}</label>;
     }
@@ -127,7 +132,7 @@ const Input = ({
   const isFocused = focused || String(value).length;
 
   return (
-    <InputContainer focused={isFocused} error={error}>
+    <InputContainer focused={isFocused} validationResult={validationResult}>
       {renderLabel()}
       <input
         value={value}
@@ -155,18 +160,25 @@ Input.defaultProps = {
 
 const StartPage = () => {
     const [value, setValue] = React.useState("");
+    const [isLogin, setIsLogin] = React.useState(false);
 
-    if (value === "tuuliot2022"){
-     return (
-         <div>
-             <StyledBox isLogin={true}>
-                 <h1>Event</h1>
-                 <Input type="Code" label="Code"
-                        value={value}
-                        onChange={val => setValue(val)}/>
-             </StyledBox>
-         </div>
-     );
+    if (isLogin) {
+        return (
+            <div>
+                <StyledBox isLogin={true}>
+                    <h1>Event</h1>
+                    <p>aösldkfjaölskdjf
+                    asöldfkjaösdlkfj
+                    alskdjföalskdjf
+                    asöldkjfaslädköfj
+                    öasdölfkjasödlkfjaösldkjfölskadjf</p>
+                    <Input type="Code" label="Code"
+                           value={value}
+                           onChange={val => setValue(val)}
+                           setIsLogin={val => setIsLogin(val)}/>
+                </StyledBox>
+            </div>
+        );
     } else {
         return (
             <div>
@@ -174,7 +186,8 @@ const StartPage = () => {
                     <h1>Event</h1>
                     <Input type="Code" label="Code"
                            value={value}
-                           onChange={val => setValue(val)}/>
+                           onChange={val => setValue(val)}
+                           setIsLogin={val => setIsLogin(val)}/>
                 </StyledBox>
             </div>
         );
