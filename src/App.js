@@ -1,19 +1,15 @@
 import StartPage from './components/StartPage';
 import './App.css';
-import { TranslateProvider } from 'react-translate-json';
+import text from './translations/en.json'
 
-const translationOptions = {
-  pathPrefix: '/translations', // Path to your translations
-  locale: 'en', // User current locale
-  fallbackLocale: 'en' // Fallback locale
-};
+console.log(text);
 
 function App() {
   return (
-  <TranslateProvider {...translationOptions}>
-    <div className='mainDiv'/>
-    <StartPage/>
-  </TranslateProvider>
+    <>
+        <div className='mainDiv'/>
+        <StartPage/>
+    </>
   );
 }
 

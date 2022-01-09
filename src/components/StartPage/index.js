@@ -16,6 +16,7 @@ const StyledBox = styled.div`
     transform: translate(-50%, -50%);
     z-index: 2;
     width: ${props => (props.isLogin ? "80%":"50%")};
+    min-width: 7cm;
     height: ${props => (props.isLogin ? "50vh":"calc(20vh + 50px)")};
     max-height: 200px
     padding: 20px;
@@ -57,7 +58,6 @@ const InputContainer = styled.div`
         font-size: 15px;
         transform: translateY(-23px) translateX(-5px);
         z-index: 501;
-        padding: 0 8px;
         `
     }
 `;
@@ -161,7 +161,7 @@ Input.defaultProps = {
 const StartPage = () => {
     const [value, setValue] = React.useState("");
     const [isLogin, setIsLogin] = React.useState(false);
-
+    
     if (isLogin) {
         return (
             <div>
