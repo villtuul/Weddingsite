@@ -161,7 +161,7 @@ Input.defaultProps = {
 const StartPage = () => {
     const [value, setValue] = React.useState("");
     const [isLogin, setIsLogin] = React.useState(false);
-    
+
     if (isLogin) {
         return (
             <div>
