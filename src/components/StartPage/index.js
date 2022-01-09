@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import * as translation from '../../translations/en.json'
 
 let timer = null;
 
@@ -161,34 +162,39 @@ Input.defaultProps = {
 const StartPage = () => {
     const [value, setValue] = React.useState("");
     const [isLogin, setIsLogin] = React.useState(false);
+    const [locale, setLocale] = React.useState("fi");
+
 
     if (isLogin) {
         return (
             <div>
                 <StyledBox isLogin={true}>
-                    <h1>Event</h1>
-                    <p>aösldkfjaölskdjf
-                    asöldfkjaösdlkfj
-                    alskdjföalskdjf
-                    asöldkjfaslädköfj
-                    öasdölfkjasödlkfjaösldkjfölskadjf</p>
-                    <Input type="Code" label="Code"
-                           value={value}
+                    <h1>{translation[locale].title}</h1>
+                    <p>{translation[locale].text}</p>
+                    <Input type="Code" label={translation[locale].code}
+                    value={value}
                            onChange={val => setValue(val)}
                            setIsLogin={val => setIsLogin(val)}/>
                 </StyledBox>
-            </div>
+                <button onClick={() => setLocale("en")}>English</button>
+                <button onClick={() => setLocale("fi")}>Finnish</button>
+                <button onClick={() => setLocale("de")}>Detusch</button>
+            </div> 
         );
     } else {
         return (
             <div>
                 <StyledBox isLogin={false}>
-                    <h1>Event</h1>
-                    <Input type="Code" label="Code"
+                    <h1>{translation[locale].title}</h1>
+                    <Input type="Code" label={translation[locale].code}
                            value={value}
                            onChange={val => setValue(val)}
                            setIsLogin={val => setIsLogin(val)}/>
                 </StyledBox>
+                <button onClick={() => setLocale("en")}>English</button>
+                <button onClick={() => setLocale("fi")}>Finnish</button>
+                <button onClick={() => setLocale("de")}>Detusch</button>
+
             </div>
         );
     }
