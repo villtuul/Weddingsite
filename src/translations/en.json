@@ -2,17 +2,21 @@
   "code" : "Code",
   "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum purus vitae augue maximus, vitae faucibus nisl vehicula. Ut facilisis risus massa, ac sagittis orci condimentum sit amet. Nullam arcu elit, ultrices eget accumsan vitae, dictum in orci. Suspendisse quis aliquam mi. Ut eu dui in tellus laoreet ultrices sit amet quis nunc. Aliquam nulla nisi, blandit a tempor ac, aliquam a elit. Integer non venenatis neque. Cras ullamcorper semper aliquam. Vivamus porta nulla et sem volutpat ornare. Morbi egestas aliquam nulla, eu venenatis lectus accumsan.",
   "title": "Wedding",
-  "location" : "Location"
+  "location" : "Location",
+  "registration" : "Registration"
 },
 "fi" :  {
   "code" : "Salasana",
   "text" : "english text aölskdjfaölksdkjfaölsdkjf",
   "title": "Häät",
-  "location": "Tapahtumapaikka"
+  "location": "Tapahtumapaikka",
+  "registration" : "Ilmottautuminen"
 },
 "de" :  {
   "code" : "Passwort",
   "text" : "deutch text aölskdjfaölksdkjfaölsdkjf",
   "title": "Hochzeit",
-  "location" : "Platz"
+  "location" : "Platz",
+  "registration" : "Anmelden"
+
 }}
