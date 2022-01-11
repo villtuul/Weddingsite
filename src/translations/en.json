@@ -1,15 +1,18 @@
 {"en" : {
-  "code" : "englis",
-  "text" : "english text aölskdjfaölksdkjfaölsdkjf",
-  "title": "wedding"
+  "code" : "Code",
+  "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum purus vitae augue maximus, vitae faucibus nisl vehicula. Ut facilisis risus massa, ac sagittis orci condimentum sit amet. Nullam arcu elit, ultrices eget accumsan vitae, dictum in orci. Suspendisse quis aliquam mi. Ut eu dui in tellus laoreet ultrices sit amet quis nunc. Aliquam nulla nisi, blandit a tempor ac, aliquam a elit. Integer non venenatis neque. Cras ullamcorper semper aliquam. Vivamus porta nulla et sem volutpat ornare. Morbi egestas aliquam nulla, eu venenatis lectus accumsan.",
+  "title": "Wedding",
+  "location" : "Location"
 },
 "fi" :  {
-  "code" : "finnish",
+  "code" : "Salasana",
   "text" : "english text aölskdjfaölksdkjfaölsdkjf",
-  "title": "häät"
+  "title": "Häät",
+  "location": "Tapahtumapaikka"
 },
 "de" :  {
-  "code" : "deutsch",
+  "code" : "Passwort",
   "text" : "deutch text aölskdjfaölksdkjfaölsdkjf",
-  "title": "hochzeit"
+  "title": "Hochzeit",
+  "location" : "Platz"
 }}

@@ -8,24 +8,25 @@ const StyledBox = styled.div`
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
     color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: fixed;
+    margin: auto;
     top: ${props => (props.isLogin ? "50%":"50%")};
-    transition: all 0.5s ease;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    max-height: 100vh;
+
     width: ${props => (props.isLogin ? "80%":"50%")};
     min-width: 7cm;
-    height: ${props => (props.isLogin ? "50vh":"calc(20vh + 50px)")};
-    max-height: 200px
-    padding: 20px;
     text-align: center;
+    transition: all 0.5s ease;
 `;
 
 const InputContainer = styled.div`
-    
     display: flex;
     flex-direction: column;
     margin: 5vh 10vh;
@@ -159,6 +160,41 @@ Input.defaultProps = {
   setRef: () => {}
 };
 
+const LanguageSelector = ({changeLanguage}) => {
+    return (
+    <>
+        <button onClick={() => changeLanguage("en")}>English</button>
+        <button onClick={() => changeLanguage("fi")}>Finnish</button>
+        <button onClick={() => changeLanguage("de")}>Detusch</button>
+    </>
+    );
+}
+
+const LoginPage = ({}) => {
+    return (
+        <>
+        </>
+    );
+}
+
+const ContentPage = ({content, setValue, setIsLogin, setLocale, changeLanguage}) => {
+    return (
+        <div>
+            <StyledBox isLogin={true}>
+                <h1>content.title}</h1>
+                <p>content.text}</p>
+                <h2>content.location}</h2>
+                <p>content.text}</p>
+                <button onClick={() => {
+                    setValue("");
+                    setIsLogin(false);}}>
+                    Logout</button>
+                <LanguageSelector changeLanguage={lan => setLocale(lan)} />
+            </StyledBox>
+        </div>
+    );
+}
+
 const StartPage = () => {
     const [value, setValue] = React.useState("");
     const [isLogin, setIsLogin] = React.useState(false);
@@ -171,15 +207,15 @@ const StartPage = () => {
                 <StyledBox isLogin={true}>
                     <h1>{translation[locale].title}</h1>
                     <p>{translation[locale].text}</p>
-                    <Input type="Code" label={translation[locale].code}
-                    value={value}
-                           onChange={val => setValue(val)}
-                           setIsLogin={val => setIsLogin(val)}/>
+                    <h2>{translation[locale].location}</h2>
+                    <p>{translation[locale].text}</p>
+                    <button onClick={() => {
+                        setValue("");
+                        setIsLogin(false);}}>
+                        Logout</button>
+                    <LanguageSelector changeLanguage={lan => setLocale(lan)} />
                 </StyledBox>
-                <button onClick={() => setLocale("en")}>English</button>
-                <button onClick={() => setLocale("fi")}>Finnish</button>
-                <button onClick={() => setLocale("de")}>Detusch</button>
-            </div> 
+            </div>
         );
     } else {
         return (
@@ -190,11 +226,8 @@ const StartPage = () => {
                            value={value}
                            onChange={val => setValue(val)}
                            setIsLogin={val => setIsLogin(val)}/>
+                    <LanguageSelector changeLanguage={lan => setLocale(lan)} />
                 </StyledBox>
-                <button onClick={() => setLocale("en")}>English</button>
-                <button onClick={() => setLocale("fi")}>Finnish</button>
-                <button onClick={() => setLocale("de")}>Detusch</button>
-
             </div>
         );
     }
