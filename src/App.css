@@ -13,3 +13,9 @@
     -o-background-size: cover;
     background-size: cover;
 }
+
+img {
+    float: right;
+    margin: 0 0 0 15px;
+    width: 40%;
+}
