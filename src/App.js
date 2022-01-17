@@ -1,7 +1,7 @@
 import StyledBox from "./components/StyledBox";
 import ContentPage from "./components/ContentPage";
 import LoginPage from "./components/LoginPage";
-import './App.css';
+import './App.scss';
 import React from "react";
 
 function App() {
@@ -12,28 +12,30 @@ function App() {
 
     if (isLogin) {
         return (
-            <div className="mainDiv">
-            <StyledBox isLogin={true}>
+            <>
+            <div className="bg-image"></div>
+                <StyledBox isLogin={true}>
                     <ContentPage locale={locale}
                                  setValue={val => setValue(val)}
                                  setIsLogin={val => setIsLogin(val)}
                                  setLocale={loc => setLocale(loc)}/>
                 </StyledBox>
-            </div>
+            </>
         );
     } else {
         return (
-            <div className="mainDiv">
+            <>
+                <div className="bg-image-blurred"></div>
+                <StyledBox isLogin={false}>
+                    <LoginPage locale={locale}
+                               value={value}
+                               setValue={val => setValue(val)}
+                               setIsLogin={val => setIsLogin(val)}
+                               setLocale={loc => setLocale(loc)}/>
+                </StyledBox>
+            </>
 
-            <StyledBox isLogin={false}>
-                <LoginPage locale={locale}
-                           value={value}
-                           setValue={val => setValue(val)}
-                           setIsLogin={val => setIsLogin(val)}
-                           setLocale={loc => setLocale(loc)}/>
-            </StyledBox>
-            </div>
-        );
+    );
     }
 };
 

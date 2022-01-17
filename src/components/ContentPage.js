@@ -1,7 +1,8 @@
 import * as translation from "../translations/en.json";
 import LanguageSelector from "./LanguageSelector";
+import RegistrationForm from "./RegistrationForm";
 import route from "../route.png";
-import "../App.css"
+import "../App.scss";
 
 const ContentPage = ({locale, setValue, setIsLogin, setLocale}) => {
     return (
@@ -14,7 +15,7 @@ const ContentPage = ({locale, setValue, setIsLogin, setLocale}) => {
                 <img src={route} alt={"Route from castle to Manilla"}/>
                 {translation[locale].text}</p>
             <h2>{translation[locale].registration}</h2>
-
+            <RegistrationForm locale={locale}/>
             <button onClick={() => {
                 setValue("");
                 setIsLogin(false);}}>
