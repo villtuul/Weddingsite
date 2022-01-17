@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Added RSVP form">
+    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Language buttons are in row now. Next add flag icons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/background.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LanguageSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LanguageSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomInputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomInputField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StyledBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translations/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/en.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,7 @@
       <workItem from="1642010301946" duration="3836000" />
       <workItem from="1642053987227" duration="599000" />
       <workItem from="1642355575269" duration="1012000" />
-      <workItem from="1642411563062" duration="8362000" />
+      <workItem from="1642411563062" duration="11278000" />
     </task>
     <task id="LOCAL-00001" summary="Added location images">
       <created>1642014984599</created>
@@ -97,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642419272288</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Language buttons are in row now. Next add flag icons">
+      <created>1642420038721</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642420038721</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +127,7 @@
     <MESSAGE value="Added location images" />
     <MESSAGE value="Fixed problem with mini-css-extract-plugin" />
     <MESSAGE value="Added RSVP form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added RSVP form" />
+    <MESSAGE value="Language buttons are in row now. Next add flag icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Language buttons are in row now. Next add flag icons" />
   </component>
 </project>

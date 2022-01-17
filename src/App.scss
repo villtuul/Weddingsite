@@ -14,8 +14,8 @@
 
 .bg-image-blurred {
     @extend .bg-image;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    filter: blur(25px);
+    -webkit-filter: blur(25px);
 }
 
 img {

@@ -13,13 +13,15 @@ function App() {
     if (isLogin) {
         return (
             <>
-            <div className="bg-image"></div>
+                <div className="bg-image"></div>
+                <header></header>
                 <StyledBox isLogin={true}>
                     <ContentPage locale={locale}
                                  setValue={val => setValue(val)}
                                  setIsLogin={val => setIsLogin(val)}
                                  setLocale={loc => setLocale(loc)}/>
                 </StyledBox>
+                <footer></footer>
             </>
         );
     } else {

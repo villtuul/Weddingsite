@@ -82,7 +82,7 @@ const Input = ({
         if (val === ""){
             setValidationResult(null)
             setIsLogin(false);
-        } else if (val === "tuuliot2022") {
+        } else if (val === "240922") {
             setValidationResult("Correct");
             timer = setTimeout(() => {
                 setIsLogin(true);
