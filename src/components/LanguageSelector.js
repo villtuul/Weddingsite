@@ -1,10 +1,18 @@
+import styled from "styled-components";
+
+const Icon = styled.button`
+
+`;
+
+
 const LanguageSelector = ({changeLanguage}) => {
+
     return (
-        <>
-            <button onClick={() => changeLanguage("en")}>English</button>
-            <button onClick={() => changeLanguage("fi")}>Finnish</button>
-            <button onClick={() => changeLanguage("de")}>Detusch</button>
-        </>
+        <div>
+            <Icon onClick={() => changeLanguage("en")}>English</Icon>
+            <Icon onClick={() => changeLanguage("fi")}>Finnish</Icon>
+            <Icon onClick={() => changeLanguage("de")}>Detusch</Icon>
+        </div>
     );
 }
 

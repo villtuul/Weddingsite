@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Fixed problem with mini-css-extract-plugin">
-      <change afterPath="$PROJECT_DIR$/src/components/CustomInputField.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RegistrationForm.js" afterDir="false" />
+    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Added RSVP form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/translations/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/background.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LanguageSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LanguageSelector.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +74,7 @@
       <workItem from="1642010301946" duration="3836000" />
       <workItem from="1642053987227" duration="599000" />
       <workItem from="1642355575269" duration="1012000" />
-      <workItem from="1642411563062" duration="7549000" />
+      <workItem from="1642411563062" duration="8362000" />
     </task>
     <task id="LOCAL-00001" summary="Added location images">
       <created>1642014984599</created>
@@ -96,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642356578410</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added RSVP form">
+      <created>1642419272288</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642419272288</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added location images" />
     <MESSAGE value="Fixed problem with mini-css-extract-plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed problem with mini-css-extract-plugin" />
+    <MESSAGE value="Added RSVP form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added RSVP form" />
   </component>
 </project>
