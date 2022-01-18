@@ -6,7 +6,12 @@ const RegistrationForm = ({locale}) => {
     const [firstName, setFirstName] = React.useState("");
     const [lastName, setLastName] = React.useState("");
     const [message, setMessage] = React.useState("");
-    const [participation, setParticipate] = React.useState(true);
+    const [isParticipating, setParticipation] = React.useState(true);
+
+    const handleChange = () => {
+        setParticipation(!isParticipating);
+    };
+
     return (
             <>
                 <CustomInputField type="form" value={firstName}
@@ -18,15 +23,15 @@ const RegistrationForm = ({locale}) => {
                        label={translation[locale].lastname}/>
                     <div>
                         <h3>{translation[locale].participate}</h3>
-                        <input type="radio" value="Male" name="gender" /> {translation[locale].yes}
-                        <input type="radio" value="Female" name="gender" /> {translation[locale].no}
+                        <input type="radio" checked={isParticipating} onChange={handleChange} /> {translation[locale].yes}
+                        <input type="radio" checked={!isParticipating} onChange={handleChange}/> {translation[locale].no}
                     </div>
 
                 <CustomInputField type="textarea"  value={message}
                        onChange={val => setMessage(val)}
                        label={translation[locale].message}/>
-                <button>{translation[locale].submit}</button>
 
+                <button>{translation[locale].submit}</button>
             </>
             );
 }
