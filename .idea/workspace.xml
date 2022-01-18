@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Scrollbar updated">
+    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Language button improvements">
+      <change afterPath="$PROJECT_DIR$/src/components/RadioButton.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LanguageSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LanguageSelector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RegistrationForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/translations/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/en.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +76,7 @@
       <workItem from="1642010301946" duration="3836000" />
       <workItem from="1642053987227" duration="599000" />
       <workItem from="1642355575269" duration="1012000" />
-      <workItem from="1642411563062" duration="18298000" />
+      <workItem from="1642411563062" duration="20089000" />
     </task>
     <task id="LOCAL-00001" summary="Added location images">
       <created>1642014984599</created>
@@ -116,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642445411115</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Language button improvements">
+      <created>1642527736523</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642527736523</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +143,7 @@
     <MESSAGE value="Added RSVP form" />
     <MESSAGE value="Language buttons are in row now. Next add flag icons" />
     <MESSAGE value="Scrollbar updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scrollbar updated" />
+    <MESSAGE value="Language button improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Language button improvements" />
   </component>
 </project>

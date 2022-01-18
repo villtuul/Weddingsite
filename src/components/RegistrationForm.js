@@ -1,6 +1,7 @@
 import * as translation from "../translations/en.json";
 import React from "react";
 import CustomInputField from "./CustomInputField";
+import './RadioButton.scss'
 
 const RegistrationForm = ({locale}) => {
     const [firstName, setFirstName] = React.useState("");
@@ -21,17 +22,28 @@ const RegistrationForm = ({locale}) => {
                 <CustomInputField type="form"  value={lastName}
                        onChange={val => setLastName(val)}
                        label={translation[locale].lastname}/>
-                    <div>
-                        <h3>{translation[locale].participate}</h3>
-                        <input type="radio" checked={isParticipating} onChange={handleChange} /> {translation[locale].yes}
-                        <input type="radio" checked={!isParticipating} onChange={handleChange}/> {translation[locale].no}
-                    </div>
+                        <div className="middle">
+                            <h3>{translation[locale].participate}</h3>
+                            <label>
+                                <input type="radio" name="radio" checked={isParticipating} onChange={handleChange}/>
+                                <div className="yes box">
+                                    <span>{translation[locale].yes}</span>
+                                </div>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="radio" checked={!isParticipating} onChange={handleChange}/>
+                                <div className="no box">
+                                    <span>{translation[locale].no}</span>
+                                </div>
+                            </label>
+                        </div>
 
                 <CustomInputField type="textarea"  value={message}
                        onChange={val => setMessage(val)}
                        label={translation[locale].message}/>
 
-                <button>{translation[locale].submit}</button>
+                <button className="yes box">{translation[locale].submit}</button>
             </>
             );
 }
