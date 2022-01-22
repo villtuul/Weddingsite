@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Radio button styling">
+    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Now login is validated also with pressing enter.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CustomInputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomInputField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RegistrationForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,7 @@
       <workItem from="1642411563062" duration="20317000" />
       <workItem from="1642577250104" duration="250000" />
       <workItem from="1642578245860" duration="34000" />
-      <workItem from="1642871158068" duration="389000" />
+      <workItem from="1642871158068" duration="1535000" />
     </task>
     <task id="LOCAL-00001" summary="Added location images">
       <created>1642014984599</created>
@@ -129,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642529650818</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Now login is validated also with pressing enter.">
+      <created>1642871675574</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642871675574</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +162,8 @@
     <MESSAGE value="Scrollbar updated" />
     <MESSAGE value="Language button improvements" />
     <MESSAGE value="Radio button styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Radio button styling" />
+    <MESSAGE value="Now login is possible with enter" />
+    <MESSAGE value="Now login is validated also with pressing enter." />
+    <option name="LAST_COMMIT_MESSAGE" value="Now login is validated also with pressing enter." />
   </component>
 </project>

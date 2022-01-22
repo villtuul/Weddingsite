@@ -3,6 +3,25 @@ import React from "react";
 import CustomInputField from "./CustomInputField";
 import './RadioButton.scss'
 
+const RadioCheckBox = ({locale,isParticipating,handleChange}) => {
+    return <div className="middle">
+        <h3>{translation[locale].participate}</h3>
+        <label>
+            <input type="radio" name="radio" checked={isParticipating} onChange={handleChange}/>
+            <div className="yes box">
+                <span>{translation[locale].yes}</span>
+            </div>
+        </label>
+
+        <label>
+            <input type="radio" name="radio" checked={!isParticipating} onChange={handleChange}/>
+            <div className="no box">
+                <span>{translation[locale].no}</span>
+            </div>
+        </label>
+    </div>
+}
+
 const RegistrationForm = ({locale}) => {
     const [firstName, setFirstName] = React.useState("");
     const [lastName, setLastName] = React.useState("");
@@ -22,22 +41,9 @@ const RegistrationForm = ({locale}) => {
                 <CustomInputField type="form"  value={lastName}
                        onChange={val => setLastName(val)}
                        label={translation[locale].lastname}/>
-                        <div className="middle">
-                            <h3>{translation[locale].participate}</h3>
-                            <label>
-                                <input type="radio" name="radio" checked={isParticipating} onChange={handleChange}/>
-                                <div className="yes box">
-                                    <span>{translation[locale].yes}</span>
-                                </div>
-                            </label>
-
-                            <label>
-                                <input type="radio" name="radio" checked={!isParticipating} onChange={handleChange}/>
-                                <div className="no box">
-                                    <span>{translation[locale].no}</span>
-                                </div>
-                            </label>
-                        </div>
+                <RadioCheckBox locale={locale}
+                        isParticipating={isParticipating}
+                        handleChange={handleChange}/>
 
                 <CustomInputField type="textarea"  value={message}
                        onChange={val => setMessage(val)}
