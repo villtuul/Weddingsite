@@ -79,6 +79,7 @@ const Input = ({
     };
 
     const validateValue = val => {
+        // TODO: add serverside validation
         if (val === ""){
             setValidationResult(null)
             setIsLogin(false);
@@ -93,12 +94,18 @@ const Input = ({
         }
     };
 
+    const handleKeyDown = event => {
+        if (event.key === 'Enter' ){
+            validateValue(value)
+        }
+    }
+
     const handleOnChange = val => {
         if (type==="Code"){
             clearTimeout(timer);
             timer = setTimeout(() => {
                 validateValue(val);
-            }, 1000);
+            }, 3000);
         }
         onChange(val);
     };
@@ -123,6 +130,7 @@ const Input = ({
                 onChange={e => handleOnChange(e.target.value)}
                 onFocus={handleOnFocus}
                 onBlur={handleOnBlur}
+                onKeyDown={handleKeyDown}
                 ref={ref => setRef(ref)}
                 {...props}
             />
