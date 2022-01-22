@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:400'");
-$font: "Inter", sans-serif;
-$white: #fff;
-html {
-  overflow: hidden;
-}
+//html {
+//  overflow: hidden;
+//}
 
 .middle {
   width: 100%;
@@ -13,7 +11,6 @@ html {
     display: none;
     &:checked {
       + .box {
-        background-color: transparent;
         span {
           color: white;
           transform: translateY(70px);
@@ -24,22 +21,28 @@ html {
         }
       }
     }
+    &:focus-visible {
+      background-color: red;
+    }
   }
   .box {
     width: 200px;
     height: 200px;
+    border: solid white 2px;
+    border-radius: 5px;
 
-    background-color: transparent;
     transition: all 250ms ease;
     will-change: transition;
     display: inline-block;
     text-align: center;
     cursor: pointer;
     position: relative;
-    font-family: $font;
     font-weight: 900;
     &:active {
       transform: translateY(10px);
+    }
+    &:focus-visible {
+      background: rgba(128, 128, 128, 0.7);
     }
     span {
       position: absolute;

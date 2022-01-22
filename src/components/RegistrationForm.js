@@ -3,19 +3,28 @@ import React from "react";
 import CustomInputField from "./CustomInputField";
 import './RadioButton.scss'
 
-const RadioCheckBox = ({locale,isParticipating,handleChange}) => {
+const RadioCheckBox = ({locale,handleChange}) => {
+
+    const handleKeyDown = event => {
+        if (event.key === "Space"){
+            console.log("TEst")
+
+        }
+        console.log(event)
+    }
+
     return <div className="middle">
         <h3>{translation[locale].participate}</h3>
         <label>
-            <input type="radio" name="radio" checked={isParticipating} onChange={handleChange}/>
-            <div className="yes box">
+            <input type="radio" name="radio"  onChange={handleChange} />
+            <div className="yes box" tabIndex="3" onKeyDown={handleKeyDown} >
                 <span>{translation[locale].yes}</span>
             </div>
         </label>
 
         <label>
-            <input type="radio" name="radio" checked={!isParticipating} onChange={handleChange}/>
-            <div className="no box">
+            <input type="radio" name="radio" onChange={handleChange}/>
+            <div className="no box" tabIndex="4" onKeyDown={handleKeyDown}>
                 <span>{translation[locale].no}</span>
             </div>
         </label>
@@ -36,18 +45,20 @@ const RegistrationForm = ({locale}) => {
             <>
                 <CustomInputField type="form" value={firstName}
                        onChange={val => setFirstName(val)}
-                       label={translation[locale].firstname}/>
+                       label={translation[locale].firstname}
+                tabIndex="1"/>
 
                 <CustomInputField type="form"  value={lastName}
                        onChange={val => setLastName(val)}
-                       label={translation[locale].lastname}/>
+                       label={translation[locale].lastname}
+                                  tabIndex="2"/>
                 <RadioCheckBox locale={locale}
-                        isParticipating={isParticipating}
                         handleChange={handleChange}/>
 
                 <CustomInputField type="textarea"  value={message}
                        onChange={val => setMessage(val)}
-                       label={translation[locale].message}/>
+                       label={translation[locale].message}
+                tabIndex="5"/>
 
                 <button className="yes box">{translation[locale].submit}</button>
             </>
