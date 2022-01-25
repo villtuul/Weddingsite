@@ -3,27 +3,25 @@ import React from "react";
 import CustomInputField from "./CustomInputField";
 import './RadioButton.scss'
 
-const RadioCheckBox = ({locale,handleChange}) => {
+const RadioCheckBox = ({locale}) => {
 
     const handleKeyDown = event => {
-        if (event.key === "Space"){
-            console.log("TEst")
-
+        if (event.key === "Enter" || event.keyCode === 32 /*Space*/) {
+            document.querySelector("input[id='" + event.target.className + "']").checked = true;
         }
-        console.log(event)
     }
 
     return <div className="middle">
         <h3>{translation[locale].participate}</h3>
         <label>
-            <input type="radio" name="radio"  onChange={handleChange} />
-            <div className="yes box" tabIndex="3" onKeyDown={handleKeyDown} >
+            <input type="radio" name="radio" id="yes box" />
+            <div className="yes box" tabIndex="3" onKeyDown={handleKeyDown}>
                 <span>{translation[locale].yes}</span>
             </div>
         </label>
 
         <label>
-            <input type="radio" name="radio" onChange={handleChange}/>
+            <input type="radio" name="radio" id="no box" />
             <div className="no box" tabIndex="4" onKeyDown={handleKeyDown}>
                 <span>{translation[locale].no}</span>
             </div>
@@ -37,31 +35,26 @@ const RegistrationForm = ({locale}) => {
     const [message, setMessage] = React.useState("");
     const [isParticipating, setParticipation] = React.useState(true);
 
-    const handleChange = () => {
-        setParticipation(!isParticipating);
-    };
-
     return (
-            <>
-                <CustomInputField type="form" value={firstName}
-                       onChange={val => setFirstName(val)}
-                       label={translation[locale].firstname}
-                tabIndex="1"/>
+        <>
+            <CustomInputField type="form" value={firstName}
+                              onChange={val => setFirstName(val)}
+                              label={translation[locale].firstname}
+                              tabIndex="1"/>
 
-                <CustomInputField type="form"  value={lastName}
-                       onChange={val => setLastName(val)}
-                       label={translation[locale].lastname}
-                                  tabIndex="2"/>
-                <RadioCheckBox locale={locale}
-                        handleChange={handleChange}/>
+            <CustomInputField type="form" value={lastName}
+                              onChange={val => setLastName(val)}
+                              label={translation[locale].lastname}
+                              tabIndex="2"/>
+            <RadioCheckBox locale={locale}/>
 
-                <CustomInputField type="textarea"  value={message}
-                       onChange={val => setMessage(val)}
-                       label={translation[locale].message}
-                tabIndex="5"/>
+            <CustomInputField type="textarea" value={message}
+                              onChange={val => setMessage(val)}
+                              label={translation[locale].message}
+                              tabIndex="5"/>
 
-                <button className="yes box">{translation[locale].submit}</button>
-            </>
-            );
+            <button className="yes box">{translation[locale].submit}</button>
+        </>
+    );
 }
 export default RegistrationForm;

@@ -96,7 +96,7 @@ const Input = ({
 
     const handleKeyDown = event => {
         clearTimeout(timer)
-        if (event.key === 'Enter' ){
+        if (type === "Code" && (event.key === 'Enter' || event.key === 'Tab')){
             validateValue(value)
         }
     }
