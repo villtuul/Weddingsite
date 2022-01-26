@@ -1,4 +1,4 @@
-import * as translation from "../translations/en.json";
+import * as translation from "../translations/translation.json";
 import LanguageSelector from "./LanguageSelector";
 import RegistrationForm from "./RegistrationForm";
 import route from "../route.png";
@@ -16,9 +16,11 @@ const ContentPage = ({locale, setValue, setIsLogin, setLocale}) => {
                 {translation[locale].text}</p>
             <h2>{translation[locale].registration}</h2>
             <RegistrationForm locale={locale}/>
-            <button onClick={() => {
-                setValue("");
-                setIsLogin(false);}}>
+            <button className="btn"
+                    tabIndex="999"
+                    onClick={() => {
+                        setValue("");
+                        setIsLogin(false);}}>
                 Logout</button>
             <LanguageSelector changeLanguage={lan => setLocale(lan)} />
         </>

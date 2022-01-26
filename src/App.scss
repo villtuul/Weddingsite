@@ -30,3 +30,17 @@ img {
         background-image: url("images/background650.jpeg");
     }
 }
+
+.btn {
+    background-color:transparent;
+    color: white;
+    margin: 1vh;
+    width: 20vh;
+    height: 10vh;
+    border: 3px solid #f1f1f1;
+    border-radius: 5px;
+
+    &:hover,&:focus-visible  {
+        background: rgba(128, 128, 128, 0.7);
+    }
+}

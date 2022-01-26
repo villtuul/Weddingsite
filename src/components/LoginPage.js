@@ -1,4 +1,4 @@
-import * as translation from "../translations/en.json";
+import * as translation from "../translations/translation.json";
 import LanguageSelector from "./LanguageSelector";
 import CustomInputField from "./CustomInputField";
 import React from "react";

@@ -7,20 +7,25 @@ let timer = null;
 const InputContainer = styled.div`
     display: flex;
     flex-direction: column;
-    ${props => (props.type === "Code" ? "margin: 5vh 10vh;" : "margin: 2vh 2vh;")} 
+    ${props => (props.type === "Code" ? "margin: 5vh 10vh;" : "margin: 2vh 10vh;")} 
     position: relative;
         
-    & > input {
-        border: 0.5vh solid ${props => (props.validationResult === "Incorrect" ? "#e77674" :
-    (props.validationResult === "Correct" ? "#2bfd01" : "#eee"))};
-        border-radius: 0.25rem;
+    & > input, & > textarea {
         color: white;
+        border: 0.5vh solid ${props => (props.validationResult === "Incorrect" ? "#e77674" :
+        (props.validationResult === "Correct" ? "#2bfd01" : "#eee"))};
+        border-radius: 0.25rem;
         background-color: transparent;
         outline: none;
         padding: 12px 3px 12px 15px;
         font-size: 16px;
         transition: all 0.2s ease;
         z-index: 500;
+    }
+    & > textarea {
+        resize: none;
+        overflow: hidden;
+        height: 10vh;
     }
     & > label {
         color: ${props => (props.validationResult === "Incorrect" ? "#e77674" :
@@ -102,6 +107,10 @@ const Input = ({
     }
 
     const handleOnChange = val => {
+        // Do not allow too long inputs
+        if ((type==='textarea' && val.length > 500) ||
+            val.length > 50) return;
+
         if (type==="Code"){
             clearTimeout(timer);
             timer = setTimeout(() => {
@@ -122,10 +131,11 @@ const Input = ({
     };
 
     const isFocused = focused || String(value).length;
+    const CustomTag = type === 'textarea' ? 'textarea' : 'input';
     return (
         <InputContainer type={type} focused={isFocused} validationResult={validationResult}>
             {renderLabel()}
-            <input
+            <CustomTag
                 value={value}
                 type={type}
                 onChange={e => handleOnChange(e.target.value)}

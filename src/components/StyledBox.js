@@ -9,7 +9,6 @@ const StyledBox = styled.div`
     flex-direction: column;
     overflow-y: auto;
     font-weight: bold;
-    border: 3px solid #f1f1f1;
     position: fixed;
     top: ${props => (props.isLogin ? "50%":"50%")};
     left: 50%;
@@ -19,6 +18,7 @@ const StyledBox = styled.div`
     min-width: 7cm;
     text-align: center;
     transition: all 0.2s ease;
+    border-radius: 5px;
     
     ::-webkit-scrollbar {
         width: .6em;

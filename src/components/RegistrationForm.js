@@ -1,4 +1,4 @@
-import * as translation from "../translations/en.json";
+import * as translation from "../translations/translation.json";
 import React from "react";
 import CustomInputField from "./CustomInputField";
 import './RadioButton.scss'
@@ -53,7 +53,7 @@ const RegistrationForm = ({locale}) => {
                               label={translation[locale].message}
                               tabIndex="5"/>
 
-            <button className="yes box">{translation[locale].submit}</button>
+            <button className="btn" tabIndex="10">{translation[locale].submit}</button>
         </>
     );
 }
