@@ -53,7 +53,7 @@ const RegistrationForm = ({locale}) => {
                               label={translation[locale].message}
                               tabIndex="5"/>
 
-            <button className="btn" tabIndex="10">{translation[locale].submit}</button>
+            <button className="btn submit" tabIndex="10">{translation[locale].submit}</button>
         </>
     );
 }

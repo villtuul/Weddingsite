@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Fixed radio buttons">
+    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="css improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CustomInputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomInputField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LanguageSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LanguageSelector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RadioButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RadioButton.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RegistrationForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StyledBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/translations/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/translation.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +86,9 @@
       <workItem from="1642871158068" duration="4497000" />
       <workItem from="1643091619244" duration="2792000" />
       <workItem from="1643179678371" duration="605000" />
-      <workItem from="1643218996103" duration="5921000" />
+      <workItem from="1643218996103" duration="6176000" />
+      <workItem from="1643263806414" duration="4000" />
+      <workItem from="1643306795655" duration="5274000" />
     </task>
     <task id="LOCAL-00001" summary="Added location images">
       <created>1642014984599</created>
@@ -168,11 +167,29 @@
       <option name="project" value="LOCAL" />
       <updated>1643115010407</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="css improvements">
+      <created>1643227651091</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1643227651091</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -198,6 +215,7 @@
     <MESSAGE value="Remove to clear timeout if pressing enter. Also refactored the participation radiobutton element" />
     <MESSAGE value="Radio buttons are focusable with keyboard" />
     <MESSAGE value="Fixed radio buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed radio buttons" />
+    <MESSAGE value="css improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="css improvements" />
   </component>
 </project>

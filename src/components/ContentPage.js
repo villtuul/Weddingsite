@@ -16,13 +16,13 @@ const ContentPage = ({locale, setValue, setIsLogin, setLocale}) => {
                 {translation[locale].text}</p>
             <h2>{translation[locale].registration}</h2>
             <RegistrationForm locale={locale}/>
-            <button className="btn"
-                    tabIndex="999"
-                    onClick={() => {
-                        setValue("");
-                        setIsLogin(false);}}>
-                Logout</button>
             <LanguageSelector changeLanguage={lan => setLocale(lan)} />
+            <a className="logout"
+               tabIndex="999"
+               onClick={() => {
+                   setValue("");
+                   setIsLogin(false);}}>
+                Logout</a>
         </>
     );
 }

@@ -18,9 +18,11 @@ const Icon = styled.button`
     height:3vh;
     width:4vh;
     cursor: pointer; /* Mouse pointer on hover */
+    margin: 5px;
     
     :hover {
-        filter: grayscale(80%);
+        filter: grayscale(100%);
+        transition: all 0.5s ease;
     }
 `;
 

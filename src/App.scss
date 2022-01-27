@@ -31,16 +31,31 @@ img {
     }
 }
 
-.btn {
+.logout {
+    color: blue;
+    font-size: 14px;
+    margin-top: 2vh;
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.submit {
     background-color:transparent;
     color: white;
-    margin: 1vh;
-    width: 20vh;
-    height: 10vh;
-    border: 3px solid #f1f1f1;
+    margin: auto;
+    margin-bottom: 5vh;
+    width: 50vh;
+    box-sizing: content-box;
+    padding: 15px 32px;height: 100px;
+    border: 2px solid #f1f1f1;
     border-radius: 5px;
+    display: inline-block;
 
     &:hover,&:focus-visible  {
         background: rgba(128, 128, 128, 0.7);
+        cursor: pointer;
     }
+
 }

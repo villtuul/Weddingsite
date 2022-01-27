@@ -12,7 +12,7 @@ const InputContainer = styled.div`
         
     & > input, & > textarea {
         color: white;
-        border: 0.5vh solid ${props => (props.validationResult === "Incorrect" ? "#e77674" :
+        border: 2px solid ${props => (props.validationResult === "Incorrect" ? "#e77674" :
         (props.validationResult === "Correct" ? "#2bfd01" : "#eee"))};
         border-radius: 0.25rem;
         background-color: transparent;

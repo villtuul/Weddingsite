@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:400'");
-//html {
-//  overflow: hidden;
-//}
 
 .middle {
   width: 100%;
@@ -12,7 +9,6 @@
     &:checked {
       + .box {
         span {
-          color: white;
           transform: translateY(70px);
           &:before {
             transform: translateY(0px);
@@ -20,9 +16,6 @@
           }
         }
       }
-    }
-    &:focus-visible {
-      background-color: red;
     }
   }
   .box {
@@ -45,6 +38,7 @@
 
     &:focus-visible,&:hover  {
       background: rgba(128, 128, 128, 0.7);
+      outline:none;
     }
 
     span {
@@ -56,8 +50,7 @@
       user-select: none;
       color: white;
       &:before {
-        font-size: 1.2em;
-        font-family: FontAwesome;
+        font-size: 1.2em  ;
         display: block;
         transform: translateY(-80px);
         opacity: 0;
@@ -70,15 +63,16 @@
   .yes {
     span {
       &:before {
-        content: "Jee!";
-
+        pointer-events: none;
+        content: "\01F389";
       }
     }
   }
   .no {
     span {
       &:before {
-        content: "Nouuu!";
+        pointer-events: none;
+        content: "\01F644";
       }
     }
   }
