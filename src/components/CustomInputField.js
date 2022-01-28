@@ -9,12 +9,11 @@ const InputContainer = styled.div`
     flex-direction: column;
     ${props => (props.type === "Code" ? "margin: 5vh 10vh;" : "margin: 2vh 10vh;")} 
     position: relative;
-        
     & > input, & > textarea {
         color: white;
         border: 2px solid ${props => (props.validationResult === "Incorrect" ? "#e77674" :
         (props.validationResult === "Correct" ? "#2bfd01" : "#eee"))};
-        border-radius: 0.25rem;
+        border-radius: 5px;
         background-color: transparent;
         outline: none;
         padding: 12px 3px 12px 15px;
@@ -23,9 +22,11 @@ const InputContainer = styled.div`
         z-index: 500;
     }
     & > textarea {
-        resize: none;
+        resize: vertical;
         overflow: hidden;
-        height: 10vh;
+        height: 15vh;
+        
+        
     }
     & > label {
         color: ${props => (props.validationResult === "Incorrect" ? "#e77674" :
@@ -108,8 +109,8 @@ const Input = ({
 
     const handleOnChange = val => {
         // Do not allow too long inputs
-        if ((type==='textarea' && val.length > 500) ||
-            val.length > 50) return;
+        if ((type ==='textarea' && val.length > 500) ||
+            (type !=='textarea' && val.length > 50)) return;
 
         if (type==="Code"){
             clearTimeout(timer);

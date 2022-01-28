@@ -1,8 +1,7 @@
-import StyledBox from "./components/StyledBox";
 import ContentPage from "./components/ContentPage";
 import LoginPage from "./components/LoginPage";
 import './App.scss';
-import React from "react";
+import React, {useRef} from "react";
 
 function App() {
     const [value, setValue] = React.useState("");
@@ -12,30 +11,27 @@ function App() {
 
     if (isLogin) {
         return (
-            <>
-                <div className="bg-image">photo by</div>
-                <StyledBox isLogin={true}>
-                    <ContentPage locale={locale}
-                                 setValue={val => setValue(val)}
-                                 setIsLogin={val => setIsLogin(val)}
-                                 setLocale={loc => setLocale(loc)}/>
-                </StyledBox>
-            </>
-        );
+            <div className="overlay">
+                    <div className="contentbox loggedin">
+                        <ContentPage locale={locale}
+                                     setValue={val => setValue(val)}
+                                     setIsLogin={val => setIsLogin(val)}
+                                     setLocale={loc => setLocale(loc)}/>
+                    </div>
+            </div>
+                );
     } else {
         return (
-            <>
-                <div className="bg-image-blurred">photo by</div>
-                <StyledBox isLogin={false}>
-                    <LoginPage locale={locale}
-                               value={value}
-                               setValue={val => setValue(val)}
-                               setIsLogin={val => setIsLogin(val)}
-                               setLocale={loc => setLocale(loc)}/>
-                </StyledBox>
-            </>
-
-    );
+            <div className="overlay">
+                    <div className="contentbox logout">
+                        <LoginPage locale={locale}
+                                   value={value}
+                                   setValue={val => setValue(val)}
+                                   setIsLogin={val => setIsLogin(val)}
+                                   setLocale={loc => setLocale(loc)}/>
+                    </div>
+                </div>
+        );
     }
 };
 

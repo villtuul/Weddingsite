@@ -15,7 +15,7 @@ const StyledBox = styled.div`
     transform: translate(-50%, -50%);
     max-height: 90vh;
     width: ${props => (props.isLogin ? "80%":"50%")};
-    min-width: 7cm;
+    max-width: 100vh;
     text-align: center;
     transition: all 0.2s ease;
     border-radius: 5px;
