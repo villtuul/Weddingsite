@@ -1,0 +1,58 @@
+{"en" : {
+  "code" : "Code",
+  "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum purus vitae augue maximus, vitae faucibus nisl vehicula. Ut facilisis risus massa, ac sagittis orci condimentum sit amet. Nullam arcu elit, ultrices eget accumsan vitae, dictum in orci. Suspendisse quis aliquam mi. Ut eu dui in tellus laoreet ultrices sit amet quis nunc. Aliquam nulla nisi, blandit a tempor ac, aliquam a elit. Integer non venenatis neque. Cras ullamcorper semper aliquam. Vivamus porta nulla et sem volutpat ornare. Morbi egestas aliquam nulla, eu venenatis lectus accumsan.",
+  "title": "Wedding",
+  "location" : "Location",
+  "registration" : "Registration",
+  "participate" : "Participate",
+  "yes" : "Yes",
+  "no" : "No",
+  "message" : "Message for Ville and Lotta",
+  "firstname" : "Firstname",
+  "lastname" : "Lastname",
+  "submit" : "Submit"
+},
+"fi" :  {
+  "code" : "Salasana",
+  "text" : "english text aölskdjfaölksdkjfaölsdkjf",
+  "title": "Häät",
+  "location": "Tapahtumapaikka",
+  "registration" : "Ilmottautuminen",
+  "participate" : "Osallistun",
+  "yes" : "Kyllä",
+  "no" : "Ei",
+  "message" : "Viesti Villelle ja Lotalle",
+  "firstname" : "Etunimi",
+  "lastname" : "Sukunimi",
+  "submit" : "Lähetä"
+
+},
+"de" :  {
+  "code" : "Passwort",
+  "text" : "deutch text aölskdjfaölksdkjfaölsdkjf",
+  "title": "Hochzeit",
+  "location" : "Platz",
+  "registration" : "Anmelden",
+  "participate" : "Telinehmen",
+  "yes" : "Ja",
+  "no" : "Nein",
+  "message" : "Grusse fur Ville und Lotta",
+  "firstname" : "Name",
+  "lastname" : "Familname",
+  "submit" : "Antwort"
+},
+"se" : {
+  "code" : "Lösenord",
+  "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum purus vitae augue maximus, vitae faucibus nisl vehicula. Ut facilisis risus massa, ac sagittis orci condimentum sit amet. Nullam arcu elit, ultrices eget accumsan vitae, dictum in orci. Suspendisse quis aliquam mi. Ut eu dui in tellus laoreet ultrices sit amet quis nunc. Aliquam nulla nisi, blandit a tempor ac, aliquam a elit. Integer non venenatis neque. Cras ullamcorper semper aliquam. Vivamus porta nulla et sem volutpat ornare. Morbi egestas aliquam nulla, eu venenatis lectus accumsan.",
+  "title": "Bröllop",
+  "location" : "Plats",
+  "registration" : "Registrering",
+  "participate" : "Deltar",
+  "yes" : "Ja",
+  "no" : "Nej",
+  "message" : "Meddelande till Ville och Lotta",
+  "firstname" : "Förnamn",
+  "lastname" : "Efternamn",
+  "submit" : "Skicka"
+}
+}

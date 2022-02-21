@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tuuliot/static/css/main.1e6cbaf1.css",
+    "main.js": "/tuuliot/static/js/main.1fb7dd3a.js",
+    "static/js/787.24e85911.chunk.js": "/tuuliot/static/js/787.24e85911.chunk.js",
+    "static/media/route.png": "/tuuliot/static/media/route.55943a496773385636a5.png",
+    "static/media/background650.jpeg": "/tuuliot/static/media/background650.ca025d69048883595ae8.jpeg",
+    "static/media/background.jpeg": "/tuuliot/static/media/background.622d817ecda43d67bee5.jpeg",
+    "index.html": "/tuuliot/index.html",
+    "static/media/gb.svg": "/tuuliot/static/media/gb.516897fd3988e35032b772b026a19f75.svg",
+    "static/media/fi.svg": "/tuuliot/static/media/fi.096c0ee26081bc0c577a2d4b3fcf298e.svg",
+    "static/media/se.svg": "/tuuliot/static/media/se.5a79810b09a06d579eadd3ad923d6df8.svg",
+    "static/media/de.svg": "/tuuliot/static/media/de.6435bf24d148ca7248e78a89c1d026ca.svg",
+    "main.1e6cbaf1.css.map": "/tuuliot/static/css/main.1e6cbaf1.css.map",
+    "main.1fb7dd3a.js.map": "/tuuliot/static/js/main.1fb7dd3a.js.map",
+    "787.24e85911.chunk.js.map": "/tuuliot/static/js/787.24e85911.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e6cbaf1.css",
+    "static/js/main.1fb7dd3a.js"
+  ]
+}

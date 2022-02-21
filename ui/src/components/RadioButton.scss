@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400'");
+
+.middle {
+  text-align: center;
+
+  input[type="radio"] {
+    display: none;
+    &:checked {
+      + .box {
+        span {
+          transform: translateY(70px);
+          &:before {
+            transform: translateY(0px);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    border: solid white 2px;
+    border-radius: 20px;
+    margin: 2vh 2vh 2vh 2vh;
+
+    transition: all 250ms ease;
+    will-change: transition;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    &:active {
+      transform: translateY(10px);
+    }
+
+    &:focus-visible,&:hover  {
+      background: rgba(128, 128, 128, 0.7);
+      outline:none;
+    }
+
+    span {
+      transform: translate(0, 30px);
+      left: 0;
+      right: 0;
+      transition: all 300ms ease;
+      font-size: 1.5em;
+      user-select: none;
+      color: white;
+      &:before {
+        font-size: 1.2em  ;
+        display: block;
+        transform: translateY(-80px);
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+        font-weight: normal;
+        color: white;
+      }
+    }
+  }
+  .yes {
+    span {
+      &:before {
+        pointer-events: none;
+        content: "\01F389";
+      }
+    }
+  }
+  .no {
+    span {
+      &:before {
+        pointer-events: none;
+        content: "\01F644";
+      }
+    }
+  }
+}
