@@ -3,6 +3,7 @@ import React from "react";
 import CustomInputField from "./CustomInputField";
 import './RadioButton.scss'
 
+
 const RadioCheckBox = ({locale}) => {
 
     const handleKeyDown = event => {
@@ -34,19 +35,35 @@ const RegistrationForm = ({locale}) => {
     const [firstName, setFirstName] = React.useState("");
     const [lastName, setLastName] = React.useState("");
     const [message, setMessage] = React.useState("");
+    const [submitted, setSubmitted] = React.useState("");
 
     const handleSubmit = e => {
         var json ={
-            "firstname": firstName,
-            "lastname": lastName,
+            "firstName": firstName,
+            "lastName": lastName,
             "message": message,
-            "isparticipating": document.querySelector("input[id='yes box']").checked
+            "isParticipating": document.querySelector("input[id='yes box']").checked
         }
-        console.log(json);
-        // TODO ajax call to server
-    }
+        // Simple POST request with a JSON body using fetch
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(json)
+        };
 
-    return (
+        fetch('/api/user', requestOptions)
+            .then(response => {
+                console.log(response);
+                if (response.ok) {
+                    setSubmitted(true)
+                }
+            })
+    }
+    console.log(submitted);
+    return submitted ? (
+        <button className="btn submit" onClick={setSubmitted(false)} tabIndex="10">Submit again</button>
+        ) :
+        (
         <>
             <CustomInputField type="form" value={firstName}
                               onChange={val => setFirstName(val)}
