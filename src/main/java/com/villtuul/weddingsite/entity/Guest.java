@@ -1,4 +1,4 @@
-package com.example.weddingsite.entity;
+package com.villtuul.weddingsite.entity;
 
 import javax.persistence.*;
 
@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Users {
+public class Guest {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

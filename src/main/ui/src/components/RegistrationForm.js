@@ -35,15 +35,42 @@ const RegistrationForm = ({locale}) => {
     const [firstName, setFirstName] = React.useState("");
     const [lastName, setLastName] = React.useState("");
     const [message, setMessage] = React.useState("");
-    const [submitted, setSubmitted] = React.useState("");
+    const [submitted, setSubmitted] = React.useState(false);
 
+    const highlightField = id => {
+        var element = document.getElementById(id);
+        element.style.WebkitAnimation = "shake .5s";
+        element.style.animation = "shake .5s";
+    }
+
+    const validateForm = e => {
+        var validationResult = true;
+        if (firstName.length == 0){
+            highlightField("firstname");
+            validationResult = false;
+        }
+        if (lastName.length == 0){
+            highlightField("lastname");
+            validationResult = false;
+        }
+        if (!document.querySelector("input[id='yes box']").checked &&
+            !document.querySelector("input[id='no box']").checked){
+            highlightField("box");
+             validationResult = false;
+        }
+        return validationResult;
+    }
     const handleSubmit = e => {
+        if (!validateForm()){
+            return;
+        }
         var json ={
             "firstName": firstName,
             "lastName": lastName,
             "message": message,
-            "isParticipating": document.querySelector("input[id='yes box']").checked
+            "participating": document.querySelector("input[id='yes box']").checked
         }
+
         // Simple POST request with a JSON body using fetch
         const requestOptions = {
             method: 'POST',
@@ -51,7 +78,7 @@ const RegistrationForm = ({locale}) => {
             body: JSON.stringify(json)
         };
 
-        fetch('/api/user', requestOptions)
+        fetch('/api/guest', requestOptions)
             .then(response => {
                 console.log(response);
                 if (response.ok) {
@@ -59,30 +86,28 @@ const RegistrationForm = ({locale}) => {
                 }
             })
     }
-    console.log(submitted);
-    return submitted ? (
-        <button className="btn submit" onClick={setSubmitted(false)} tabIndex="10">Submit again</button>
-        ) :
-        (
+
+    return submitted ?
+        <button className="btn submit" onClick={() => {setSubmitted(false)}} tabIndex="10">Submit again</button>
+        :
         <>
-            <CustomInputField type="form" value={firstName}
+            <CustomInputField type="form" id ="firstname" value={firstName}
                               onChange={val => setFirstName(val)}
                               label={translation[locale].firstname}
-                              tabIndex="1"/>
+                              tabIndex="1"  />
 
-            <CustomInputField type="form" value={lastName}
+            <CustomInputField type="form" id ="lastname" value={lastName}
                               onChange={val => setLastName(val)}
                               label={translation[locale].lastname}
                               tabIndex="2"/>
             <RadioCheckBox locale={locale}/>
 
-            <CustomInputField type="textarea" value={message}
+            <CustomInputField type="textarea" id ="lastname" value={message}
                               onChange={val => setMessage(val)}
                               label={translation[locale].message}
                               tabIndex="5"/>
 
             <button className="btn submit" onClick={handleSubmit} tabIndex="10">{translation[locale].submit}</button>
-        </>
-    );
+        </>;
 }
 export default RegistrationForm;
