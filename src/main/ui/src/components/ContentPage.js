@@ -4,8 +4,7 @@ import RegistrationForm from "./RegistrationForm";
 import route from "../route.png";
 import "../App.scss";
 
-const ContentPage = ({locale, setValue, setIsLogin, setLocale}) => {
-
+const ContentPage = ({locale, setIsLogin, setLocale}) => {
 
     return (
         <>
@@ -22,7 +21,6 @@ const ContentPage = ({locale, setValue, setIsLogin, setLocale}) => {
             <a className="logoutbtn"
                tabIndex="999"
                onClick={() => {
-                   setValue("");
                    setIsLogin(false);
                    }}>
                 Logout</a>

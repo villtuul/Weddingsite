@@ -38,24 +38,28 @@ const RegistrationForm = ({locale}) => {
     const [submitted, setSubmitted] = React.useState(false);
 
     const highlightField = id => {
-        var element = document.getElementById(id);
-        element.style.WebkitAnimation = "shake .5s";
-        element.style.animation = "shake .5s";
+        var elements = document.querySelectorAll(id);
+        console.log(elements);
+        elements.forEach(el => {
+            el.style.backgroundColor = "red";
+            setTimeout(() =>  el.style.backgroundColor = "transparent", 700);
+        })
+
     }
 
     const validateForm = e => {
         var validationResult = true;
         if (firstName.length == 0){
-            highlightField("firstname");
+            highlightField("[id=firstname]");
             validationResult = false;
         }
         if (lastName.length == 0){
-            highlightField("lastname");
+            highlightField("[id=lastname]");
             validationResult = false;
         }
         if (!document.querySelector("input[id='yes box']").checked &&
             !document.querySelector("input[id='no box']").checked){
-            highlightField("box");
+            highlightField("[class$='box']");
              validationResult = false;
         }
         return validationResult;
@@ -82,7 +86,11 @@ const RegistrationForm = ({locale}) => {
             .then(response => {
                 console.log(response);
                 if (response.ok) {
+                    // Set submitted and clear fields
                     setSubmitted(true)
+                    setFirstName("");
+                    setLastName("");
+                    setMessage("");
                 }
             })
     }
@@ -100,9 +108,9 @@ const RegistrationForm = ({locale}) => {
                               onChange={val => setLastName(val)}
                               label={translation[locale].lastname}
                               tabIndex="2"/>
-            <RadioCheckBox locale={locale}/>
+            <RadioCheckBox locale={locale} id ="box"/>
 
-            <CustomInputField type="textarea" id ="lastname" value={message}
+            <CustomInputField type="textarea" id ="message" value={message}
                               onChange={val => setMessage(val)}
                               label={translation[locale].message}
                               tabIndex="5"/>

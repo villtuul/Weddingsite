@@ -10,7 +10,8 @@
   "message" : "Message for Ville and Lotta",
   "firstname" : "Firstname",
   "lastname" : "Lastname",
-  "submit" : "Submit"
+  "submit" : "Submit",
+  "correct" : "Correct"
 },
 "fi" :  {
   "code" : "Salasana",
@@ -24,7 +25,8 @@
   "message" : "Viesti Villelle ja Lotalle",
   "firstname" : "Etunimi",
   "lastname" : "Sukunimi",
-  "submit" : "Lähetä"
+  "submit" : "Lähetä",
+  "correct" : "Salasana oikein"
 
 },
 "de" :  {
@@ -39,7 +41,8 @@
   "message" : "Grusse fur Ville und Lotta",
   "firstname" : "Name",
   "lastname" : "Familname",
-  "submit" : "Antwort"
+  "submit" : "Antwort",
+  "correct" : "Correct"
 },
 "se" : {
   "code" : "Lösenord",
@@ -53,6 +56,7 @@
   "message" : "Meddelande till Ville och Lotta",
   "firstname" : "Förnamn",
   "lastname" : "Efternamn",
-  "submit" : "Skicka"
+  "submit" : "Skicka",
+  "correct" : "Correct"
 }
 }

@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Added backend to handle registration form submits">
+    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Improved registration ui. &amp; Refactored class names">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weddingsite/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weddingsite/UsersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/GuestsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weddingsite/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/controller/GuestsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weddingsite/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/entity/Guest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weddingsite/links/UserLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/links/GuestLinks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weddingsite/repository/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/repository/GuestsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weddingsite/service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/service/GuestsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/ContentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/components/ContentPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/CustomInputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/components/CustomInputField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/components/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/RadioButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/components/RadioButton.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/components/RegistrationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/translations/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/translations/translation.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +138,7 @@
       <recent name="C:\Users\vto\python\tuuliot\public" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.UsersApplication">
+  <component name="RunManager" selected="Gradle.tuuliot [bootRun]">
     <configuration name="tuuliot [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -233,9 +230,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.tuuliot [bootRun]" />
         <item itemvalue="Gradle.tuuliot [build]" />
         <item itemvalue="Gradle.tuuliot [clean]" />
-        <item itemvalue="Gradle.tuuliot [bootRun]" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="HTTP Request.generated-requests | #4" />
       </list>
@@ -272,7 +269,9 @@
       <workItem from="1645596121264" duration="594000" />
       <workItem from="1645686054757" duration="24000" />
       <workItem from="1645870650645" duration="3810000" />
-      <workItem from="1645954454027" duration="6895000" />
+      <workItem from="1645954454027" duration="7058000" />
+      <workItem from="1646075632802" duration="2867000" />
+      <workItem from="1646126578309" duration="9419000" />
     </task>
     <task id="LOCAL-00001" summary="Added location images">
       <created>1642014984599</created>
@@ -407,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645874490084</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Improved registration ui. &amp; Refactored class names">
+      <created>1646047899950</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1646047899950</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,6 +459,7 @@
     <MESSAGE value="Css improvements" />
     <MESSAGE value="Project structure update" />
     <MESSAGE value="Added backend to handle registration form submits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added backend to handle registration form submits" />
+    <MESSAGE value="Improved registration ui. &amp; Refactored class names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved registration ui. &amp; Refactored class names" />
   </component>
 </project>
