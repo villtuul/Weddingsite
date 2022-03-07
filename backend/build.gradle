@@ -1,0 +1,42 @@
+apply plugin: "org.springframework.boot"
+apply plugin: "io.spring.dependency-management"
+apply plugin: "java"
+
+springBoot {
+    mainClassName = 'com.villtuul.weddingsite.GuestsApplication'
+}
+
+dependencies {
+    implementation project(':frontend')
+
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.springframework.data:spring-data-rest-hal-explorer'
+
+    compileOnly 'org.projectlombok:lombok'
+
+    implementation 'org.springframework.boot:spring-boot-devtools'
+
+    runtimeOnly 'com.h2database:h2'
+
+    annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor "javax.annotation:javax.annotation-api:1.3.2"
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'io.projectreactor:reactor-test'
+
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.security:spring-security-test'
+}
+
+task copyWebApp(type: Copy) {
+    from "$rootDir/frontend/build"
+    into "$rootDir/backend/build/resources/main/static/."
+}
+
+bootJar.dependsOn(copyWebApp)
+compileJava.dependsOn ":frontend:build"

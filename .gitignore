@@ -9,7 +9,11 @@ src/main/ui/node_modules
 /coverage
 
 # production
-src/main/ui/build
+backend/build
+frontend/build
+frontend/node_modules
+*.gradle
+gradle
 
 # misc
 .DS_Store

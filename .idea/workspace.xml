@@ -4,15 +4,145 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Improved registration ui. &amp; Refactored class names">
+    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="Refactoring and validation for submit button">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/asset-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/static/media/background.622d817ecda43d67bee5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/static/media/background650.ca025d69048883595ae8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/static/media/de.6435bf24d148ca7248e78a89c1d026ca.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/static/media/fi.096c0ee26081bc0c577a2d4b3fcf298e.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/static/media/gb.516897fd3988e35032b772b026a19f75.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/static/media/route.55943a496773385636a5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/resources/main/static/static/media/se.5a79810b09a06d579eadd3ad923d6df8.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/GuestsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/controller/GuestsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/controller/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/entity/Guest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/links/GuestLinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/repository/GuestsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/service/GuestsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/templates/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/asset-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/static/media/background.622d817ecda43d67bee5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/static/media/background650.ca025d69048883595ae8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/static/media/de.6435bf24d148ca7248e78a89c1d026ca.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/static/media/fi.096c0ee26081bc0c577a2d4b3fcf298e.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/static/media/gb.516897fd3988e35032b772b026a19f75.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/static/media/route.55943a496773385636a5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/static/media/se.5a79810b09a06d579eadd3ad923d6df8.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ContentPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/CustomInputField.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/LanguageSelector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/LoginPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/RadioButton.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/RegistrationForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ScrollToTop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/StyledBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/images/background.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/images/background650.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/images/de.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/images/fi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/images/gb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/images/se.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/route.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/translations/translation.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/ContentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/components/ContentPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/CustomInputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/components/CustomInputField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/components/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/RadioButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/components/RadioButton.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/components/RegistrationForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/src/translations/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/translations/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/AppController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/GuestsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/controller/GuestsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/entity/Guest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/links/GuestLinks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/repository/GuestsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/villtuul/weddingsite/service/GuestsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/static/js/787.24e85911.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/static/js/787.24e85911.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/static/media/background.622d817ecda43d67bee5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/static/media/background650.ca025d69048883595ae8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/static/media/de.6435bf24d148ca7248e78a89c1d026ca.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/static/media/fi.096c0ee26081bc0c577a2d4b3fcf298e.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/static/media/gb.516897fd3988e35032b772b026a19f75.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/static/media/route.55943a496773385636a5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/build/static/media/se.5a79810b09a06d579eadd3ad923d6df8.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/App.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/ContentPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/CustomInputField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/LanguageSelector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/LoginPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/RadioButton.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/RegistrationForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/ScrollToTop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/components/StyledBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/images/background.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/images/background650.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/images/de.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/images/fi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/images/gb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/images/se.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/route.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/src/translations/translation.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,27 +160,70 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/java">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ui">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/backend">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/frontend">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
+                <item name="weddingsite" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
+                <item name="weddingsite" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
+                <item name="weddingsite" type="f1a62948:ProjectNode" />
+                <item name="backend" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="weddingsite" type="f1a62948:ProjectNode" />
+                <item name="backend" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="weddingsite" type="f1a62948:ProjectNode" />
+                <item name="backend" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
+                <item name="weddingsite" type="f1a62948:ProjectNode" />
+                <item name="backend" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="weddingsite" type="f1a62948:ProjectNode" />
+                <item name="frontend" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="weddingsite" type="f1a62948:ProjectNode" />
+                <item name="frontend" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="weddingsite" type="f1a62948:ProjectNode" />
+                <item name="frontend" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
@@ -66,6 +239,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -109,6 +284,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -138,8 +314,8 @@
       <recent name="C:\Users\vto\python\tuuliot\public" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.tuuliot [bootRun]">
-    <configuration name="tuuliot [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.weddingsite:backend [bootRun]">
+    <configuration name="weddingsite [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -160,7 +336,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="tuuliot [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="weddingsite [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -181,10 +357,52 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="tuuliot [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="weddingsite:backend [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="weddingsite:backend [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="weddingsite:backend [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -202,12 +420,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="wedding" />
       <method v="2">
@@ -221,6 +433,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GuestsApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="weddingsite.backend.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.villtuul.weddingsite.GuestsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuestsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="weddingsite.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.villtuul.weddingsite.GuestsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UsersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.villtuul.weddingsite.GuestsApplication" />
@@ -230,11 +456,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.tuuliot [bootRun]" />
-        <item itemvalue="Gradle.tuuliot [build]" />
-        <item itemvalue="Gradle.tuuliot [clean]" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
-        <item itemvalue="HTTP Request.generated-requests | #4" />
+        <item itemvalue="Gradle.weddingsite:backend [bootRun]" />
+        <item itemvalue="Gradle.weddingsite:backend [build]" />
+        <item itemvalue="Gradle.weddingsite:backend [clean]" />
+        <item itemvalue="Gradle.weddingsite [bootRun]" />
+        <item itemvalue="Gradle.weddingsite [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +497,11 @@
       <workItem from="1645870650645" duration="3810000" />
       <workItem from="1645954454027" duration="7058000" />
       <workItem from="1646075632802" duration="2867000" />
-      <workItem from="1646126578309" duration="9419000" />
+      <workItem from="1646126578309" duration="9715000" />
+      <workItem from="1646204527390" duration="9000" />
+      <workItem from="1646419886597" duration="850000" />
+      <workItem from="1646422118980" duration="8089000" />
+      <workItem from="1646507680045" duration="17418000" />
     </task>
     <task id="LOCAL-00001" summary="Added location images">
       <created>1642014984599</created>
@@ -413,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646047899950</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Refactoring and validation for submit button">
+      <created>1646165780018</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1646165780018</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,6 +697,7 @@
     <MESSAGE value="Project structure update" />
     <MESSAGE value="Added backend to handle registration form submits" />
     <MESSAGE value="Improved registration ui. &amp; Refactored class names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved registration ui. &amp; Refactored class names" />
+    <MESSAGE value="Refactoring and validation for submit button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring and validation for submit button" />
   </component>
 </project>
