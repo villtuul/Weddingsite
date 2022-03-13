@@ -91,21 +91,32 @@ img {
     }
 }
 
-.submit {
+.btn {
     background-color:transparent;
     color: white;
-    margin: 30px;
-    margin-bottom: 5vh;
+    margin: 10px;
+    margin-bottom: 1vh;
     box-sizing: content-box;
-    padding: 15px 32px;height: 100px;
+    padding: 5px 10px;
+    height: 20px;
     border: 2px solid #f1f1f1;
     border-radius: 25px;
     display: inline-block;
     width: min(70%, 300px);
-
     &:hover,&:focus-visible  {
         background: rgba(128, 128, 128, 0.7);
         cursor: pointer;
     }
+}
+.submit {
+    margin: 30px;
+    margin-bottom: 5vh;
+    padding: 15px 32px;
+    height: 100px;
+}
+.sliderimg{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
 
 }

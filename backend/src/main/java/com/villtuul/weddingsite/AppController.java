@@ -10,7 +10,9 @@ import lombok.extern.slf4j.Slf4j;
 @RequiredArgsConstructor
 public class AppController {
 	
-	@RequestMapping({"/"})
+	@RequestMapping(value = { "/", "/{x:[\\w\\-]+}",
+			"/{x:^(?!api$).*$}/**/{y:[\\w\\-]+}",
+			"/{x:^(?!perform_login$).*$}/**/{y:[\\w\\-]+}" })
 	public String loadUI() {
 		log.info("loading UIssdd");
 		return "forward:/index.html";

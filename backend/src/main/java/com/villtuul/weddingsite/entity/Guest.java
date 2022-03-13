@@ -2,7 +2,6 @@ package com.villtuul.weddingsite.entity;
 
 import javax.persistence.*;
 
-
 import lombok.Data;
 
 @Entity
@@ -19,7 +18,7 @@ public class Guest {
     
     @Column
     private String lastName;
-    
+
     @Column
     private String message;
 
