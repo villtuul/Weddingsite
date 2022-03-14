@@ -1,55 +1,40 @@
-import ContentPage from "./components/ContentPage";
-import LoginPage from "./components/LoginPage";
 import './App.scss';
 import React from "react";
-import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
+import ContentPage from "./components/ContentPage";
+import LoginPage from "./components/LoginPage";
 import AdminPage from "./components/AdminPage";
-
-function contentPage(locale, setLocale){
-    return (
-            <div className="contentbox loggedin">
-                <ContentPage locale={locale}
-                             setLocale={loc => setLocale(loc)}/>
-            </div>
-    );
-}
-
-function adminPage(locale, setLocale){
-    return (
-        <div className="contentbox loggedin">
-            <AdminPage locale={locale}
-                         setLocale={loc => setLocale(loc)}/>
-        </div>
-    );
-}
-
-function loginPage(locale,setLocale){
-    return (
-        <div className="contentbox logout">
-            <LoginPage locale={locale}
-                       setLocale={loc => setLocale(loc)}
-            />
-        </div>
-
-    );
-}
+import LanguageSelector from "./components/LanguageSelector";
+import {Routes, Route, useLocation, useNavigate} from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import * as translation from "./translations/translation.json";
 
 const App = () => {
     const [locale, setLocale] = React.useState("fi");
+    let location = useLocation();
+    let navigate = useNavigate()
 
     return (
+    <div>
+        <TransitionGroup className="overlay">
+            <CSSTransition key={location.key} classNames="fade" timeout={900}>
+                <Routes location={location}>
+                    <Route path="/login" element={<LoginPage locale={locale} navigate={navigate} />}/>
+                    <Route exact path="/" element={<LoginPage locale={locale} navigate={navigate} />}/>
+                    <Route exact path="/content" element={<ContentPage locale={locale}/>}/>
+                    <Route exact path="/admin" element={<AdminPage locale={locale}/>}/>
+                </Routes>
+            </CSSTransition>
+        </TransitionGroup>
 
-    <div className="overlay">
-        <BrowserRouter>
-            <Routes>
-                <Route path="/login" element={loginPage(locale, setLocale)}/>
-                <Route exact path="/content" element={contentPage(locale, setLocale)}/>
-                <Route exact path="/admin" element={adminPage(locale, setLocale)}/>
-                <Route exact path="*"
-                       element={<Navigate to="/login"/>}
-                />
-            </Routes>
-        </BrowserRouter>
+        <div className="header">
+            <LanguageSelector changeLanguage={lan => setLocale(lan)} />
+            <a className="logoutbtn"
+               style={{display: location.pathname === '/login' ? 'none' : 'block' }}
+               onClick={() => {fetch('/perform_logout', {method: 'POST'}).finally(v => {navigate('/login');})}}>
+                {translation[locale].logout}
+            </a>
+        </div>
+
     </div>
     );
 };

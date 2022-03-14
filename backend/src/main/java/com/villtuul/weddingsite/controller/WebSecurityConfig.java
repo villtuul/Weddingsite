@@ -22,12 +22,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(final HttpSecurity http) throws Exception {
         http
-                .cors().disable()// TODO remove this
+                .cors().and()// TODO remove this
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers(AUTH_WHITE_LIST).permitAll()
-                .antMatchers("/content").hasRole("USER")
-                .antMatchers("/admin").hasRole("ADMIN")
+                .antMatchers("/content", "/api/guest").hasRole("USER")
+                .antMatchers("/admin", "/api/guests").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin().loginPage("/login")
@@ -44,12 +44,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
-                .withUser("foo")
-                .password("bar")
+                .withUser("user")
+                .password("user")
                 .roles("USER")
                 .and()
                 .withUser("admin")
-                .password("1234")
+                .password("admin")
                 .roles("ADMIN");
     }
 

@@ -2,6 +2,7 @@ import * as translation from "../translations/translation.json";
 import React from "react";
 import CustomInputField from "./CustomInputField";
 import './RadioButton.scss'
+import {highlightField} from "../Utils";
 
 
 const RadioCheckBox = ({locale}) => {
@@ -36,16 +37,6 @@ const RegistrationForm = ({locale}) => {
     const [lastName, setLastName] = React.useState("");
     const [message, setMessage] = React.useState("");
     const [submitted, setSubmitted] = React.useState(false);
-
-    const highlightField = id => {
-        var elements = document.querySelectorAll(id);
-        console.log(elements);
-        elements.forEach(el => {
-            el.style.backgroundColor = "red";
-            setTimeout(() =>  el.style.backgroundColor = "transparent", 700);
-        })
-
-    }
 
     const validateForm = e => {
         var validationResult = true;

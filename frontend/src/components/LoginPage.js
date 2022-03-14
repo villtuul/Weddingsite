@@ -1,10 +1,10 @@
 import * as translation from "../translations/translation.json";
-import LanguageSelector from "./LanguageSelector";
 import React from "react";
 import CustomInputField from "./CustomInputField";
+import {highlightField} from "../Utils";
 
-const LoginPage = ({locale, setLocale}) => {
-    const [user, setUser] = React.useState(null);
+const LoginPage = ({locale,navigate}) => {
+    const [user, setUser] = React.useState("user");
     const [pass, setPass] = React.useState(null);
     const [isAdminLogin, setIsAdminLogin] = React.useState(false);
 
@@ -13,40 +13,46 @@ const LoginPage = ({locale, setLocale}) => {
     }
 
     const doSubmit = () => {
+        // Because react state is async we use this way to hardcode username when user logs in.
+        let username = user;
         if (!isAdminLogin){
-            setUser("foo");
+            username = "user";
         }
 
-        var loginUrl = '/perform_login?username='+user+'&password='+pass;
-        fetch(loginUrl, {
-            method: "POST"
-        })
-        .then(v => {if(v.redirected) window.location = v.url})
-        .catch(e => {console.warn(e)})
+        if (pass == null || user == null){
+            highlightField("[id=Code]");
+            return;
+        }
+
+        let loginUrl = '/perform_login?username=' + username + '&password=' + pass;
+        fetch(loginUrl, {method: "POST"})
+        .then(v => {navigate(v.url.substring(v.url.lastIndexOf('/')+1))})
+        .catch(e => {console.warn(e); })
     }
 
     let form;
     if (isAdminLogin) {
-        form = <>
-                    <CustomInputField type="Code" onChange={val => setUser(val)} label={translation[locale].user}/>
-                    <CustomInputField type="Code" onChange={val => setPass(val)} label={translation[locale].code}/>
-                </>;
+        form =
+            <>
+                <CustomInputField type="Code" id="Code" onChange={val => setUser(val)} label={translation[locale].user}/>
+                <CustomInputField type="Password" id="Code"  onChange={val => setPass(val)} label={translation[locale].code}/>
+            </>;
     } else {
-        form = <CustomInputField type="Code" onChange={val => setPass(val)} label={translation[locale].code}/>;
+        form = <CustomInputField type="Code" id="Code" onChange={val => setPass(val)} label={translation[locale].code}/>;
     }
 
     return (
-        <>
+        <div className="contentbox logout">
             <h1>{translation[locale].title}</h1>
             {form}
-            <button className="btn submit" onClick={doSubmit} tabIndex="1">
+            <button className="btn submit"
+                    onClick={doSubmit} tabIndex="1">
                 {translation[locale].login}
             </button>
             <button className="btn" onClick={toggleAdminLogin} tabIndex="1">
                 {translation[locale].admin}
             </button>
-            <LanguageSelector changeLanguage={lan => setLocale(lan)} />
-        </>
+        </div>
     );
 }
 

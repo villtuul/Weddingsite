@@ -1,15 +1,13 @@
 import * as translation from "../translations/translation.json";
-import LanguageSelector from "./LanguageSelector";
 import RegistrationForm from "./RegistrationForm";
-import route from "../route.png";
+import route from "../images/route.png";
 import "../App.scss";
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 
-const ContentPage = ({locale, setLocale}) => {
-
+const ContentPage = ({locale}) => {
     return (
-        <>
+        <div className="contentbox loggedin">
             <h1>{translation[locale].title}</h1>
             <p>{translation[locale].text}</p>
             <h2>{translation[locale].registration}</h2>
@@ -22,24 +20,8 @@ const ContentPage = ({locale, setLocale}) => {
                      className="sliderimg" alt={"Manilla"}/>
                 <img src={route} className="sliderimg" alt={"Route from castle to Manilla"}/>
             </AliceCarousel>
-            <p>
-                {translation[locale].text}</p>
-            <LanguageSelector changeLanguage={lan => setLocale(lan)} />
-            <a className="logoutbtn"
-               tabIndex="999"
-               onClick={() => {
-                   fetch('/perform_logout', {
-                       method: 'POST'
-                   })
-                       .then(v => {
-                           if(v.redirected) window.location = v.url
-                       })
-                       .catch(e => {
-                           console.warn(e);
-                       })
-                   }}>
-                {translation[locale].logout}</a>
-        </>
+            <p>{translation[locale].text}</p>
+        </div>
     );
 }
 
