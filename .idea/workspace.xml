@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="React route fixes and Admin page grid view">
+    <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="UI fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/build/resources/main/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build/resources/main/static/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/build/resources/main/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build/resources/main/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/controller/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/controller/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/AdminPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AdminPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ContentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ContentPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/translations/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/translations/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LoginPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +175,7 @@
       <recent name="C:\Users\vto\python\tuuliot\public" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.weddingsite:backend [build]">
+  <component name="RunManager" selected="Gradle.weddingsite:backend [bootRun]">
     <configuration name="weddingsite:backend [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -268,8 +263,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.weddingsite:backend [build]" />
         <item itemvalue="Gradle.weddingsite:backend [bootRun]" />
+        <item itemvalue="Gradle.weddingsite:backend [build]" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="HTTP Request.generated-requests | #6" />
@@ -322,7 +317,7 @@
       <workItem from="1647024322198" duration="3083000" />
       <workItem from="1647079165668" duration="22156000" />
       <workItem from="1647162195308" duration="38947000" />
-      <workItem from="1647336792455" duration="3343000" />
+      <workItem from="1647336792455" duration="6128000" />
     </task>
     <task id="LOCAL-00001" summary="Added location images">
       <created>1642014984599</created>
@@ -492,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647287919900</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="UI fixes">
+      <created>1647342442572</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1647342442572</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,6 +549,7 @@
     <MESSAGE value="Gradle build creates now one jar which includes the react/node stuff&#10;Added admin page and login to it" />
     <MESSAGE value="Spring authentication and admin page" />
     <MESSAGE value="React route fixes and Admin page grid view" />
-    <option name="LAST_COMMIT_MESSAGE" value="React route fixes and Admin page grid view" />
+    <MESSAGE value="UI fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI fixes" />
   </component>
 </project>

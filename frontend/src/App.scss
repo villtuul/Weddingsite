@@ -19,7 +19,6 @@
 
     /* box sizing */
     width: 90%;
-    transition: all 1.2s ease;
     border-radius: 5px;
 }
 
@@ -120,14 +119,19 @@ img {
     object-fit: cover;
 
 }
-.fade-enter {
-    opacity: 0;
-    z-index: 1;
-}
-
-.fade-enter.fade-enter-active {
+.icon-enter {
+     opacity: 0;
+ }
+.icon-enter-active {
     opacity: 1;
-    transition: opacity 250ms ease-in;
+    transition: opacity 2000ms;
+}
+.icon-exit {
+    opacity: 1;
+}
+.icon-exit-active {
+    opacity: 0;
+    transition: opacity 2000ms;
 }
 
 .footer {

@@ -10,6 +10,6 @@ CREATE TABLE GUEST (
 
 insert into guest (first_name, last_name,is_participating,message,createdt)
 values ('Ville','Testaaja',1,'Moikkamoi',CURRENT_TIMESTAMP()),
-       ('Kaisa','Kökki',1,'Heiheihei',CURRENT_TIMESTAMP()),
+       ('Kaisa','Kokki',1,'Heiheihei',CURRENT_TIMESTAMP()),
        ('Joulu','Pukki',1,'Joojoojoo',CURRENT_TIMESTAMP()),
-       ('Määmi','Peikkö',1,'Nåniin',CURRENT_TIMESTAMP());
+       ('Muumi','Peikko',1,'Nåniin',CURRENT_TIMESTAMP());

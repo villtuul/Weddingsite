@@ -1,5 +1,5 @@
 import * as translation from "../translations/translation.json";
-import React from "react";
+import React, {useEffect} from "react";
 import CustomInputField from "./CustomInputField";
 import {highlightField} from "../Utils";
 
@@ -45,11 +45,11 @@ const LoginPage = ({locale,navigate}) => {
         <div className="contentbox logout">
             <h1>{translation[locale].title}</h1>
             {form}
-            <button className="btn submit"
-                    onClick={doSubmit} tabIndex="1">
+            <button className="btn"
+                    onClick={doSubmit} tabIndex="2">
                 {translation[locale].login}
             </button>
-            <button className="btn" onClick={toggleAdminLogin} tabIndex="1">
+            <button className="btn" onClick={toggleAdminLogin} tabIndex="3">
                 {translation[locale].admin}
             </button>
         </div>

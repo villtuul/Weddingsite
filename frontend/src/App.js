@@ -5,18 +5,21 @@ import LoginPage from "./components/LoginPage";
 import AdminPage from "./components/AdminPage";
 import LanguageSelector from "./components/LanguageSelector";
 import {Routes, Route, useLocation, useNavigate} from "react-router-dom";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+import {TransitionGroup, CSSTransition, Transition} from "react-transition-group";
 import * as translation from "./translations/translation.json";
 
 const App = () => {
     const [locale, setLocale] = React.useState("fi");
     let location = useLocation();
-    let navigate = useNavigate()
+    const { pathname, key } = location;
+    let navigate = useNavigate();
 
     return (
     <div>
         <TransitionGroup className="overlay">
-            <CSSTransition key={location.key} classNames="fade" timeout={900}>
+            <CSSTransition unmountOnExit
+                           timeout={2000}
+                           classNames="icon">
                 <Routes location={location}>
                     <Route path="/login" element={<LoginPage locale={locale} navigate={navigate} />}/>
                     <Route exact path="/" element={<LoginPage locale={locale} navigate={navigate} />}/>
