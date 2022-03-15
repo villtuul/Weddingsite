@@ -54,7 +54,6 @@ const AdminPage = ({locale}) => {
             />
         </div>
         );
-
 }
 
 export default AdminPage;

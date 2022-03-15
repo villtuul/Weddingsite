@@ -20,7 +20,7 @@
 "fi" :  {
   "code" : "Salasana",
   "user" : "Käyttäjä",
-  "text" : "Palasin juuri uudesta koulustani, sain tänään tietää, että minun ei tarvitse osallistua ollenkaan ruotsin kielen tunneille, sillä kielitaitoni on niin vahva! Jee, tosi hienoa, saan skipattua kuulemma koko kurssin! Asuin vuonna -98 Ruotsissa ja opiskelin ruotsin kieltä Uppsalan yliopistossa, joten minun ei tarvitse käydä perusasioita enää läpi. Sama juttu englannin kielessä, opettelen ainoastaan bisnes-sanastoa.\n\nMinusta onkin tulossa uusi jymyjuttu syyskuun Hymy-lehteen ensi viikolla. Minusta otettiin Playboy-koekuvat vähän aikaa sitten, ja ne lähetetään Amerikan Playboylle tarjolle. Kuvat ovat ”minun henkisiäni” – ne on toteutettu ”karkkimaassa” ja Barbie-tyylisesti. Tapasimme sisareni Julian kanssa suomalaisen Playboy-kuvaaja Jarmo Pohjaniemen Miamissa vuonna 2004 ja hän lähetteli minulle myös paljon meiliä. Hän oli erittäin kiinnostunut meistä molemmista. Muistan että hän kehui meitä kauniiksi tytöiksi, mutta painoa olisi pitänyt kuulemma pudottaa.",
+  "text" : "Mieleni minun tekevi, aivoni ajattelevi lähteäni laulamahan, saa'ani sanelemahan, sukuvirttä suoltamahan, lajivirttä laulamahan. Sanat suussani sulavat, puhe'et putoelevat, kielelleni kerkiävät, hampahilleni hajoovat.\n\nVeli kulta, veikkoseni, kaunis kasvinkumppalini! Lähe nyt kanssa laulamahan, saa kera sanelemahan yhtehen yhyttyämme, kahta'alta käytyämme! Harvoin yhtehen yhymme, saamme toinen toisihimme näillä raukoilla rajoilla, poloisilla Pohjan mailla.\n\nLyökämme käsi kätehen, sormet sormien lomahan, lauloaksemme hyviä, parahia pannaksemme, kuulla noien kultaisien, tietä mielitehtoisien, nuorisossa nousevassa, kansassa kasuavassa: noita saamia sanoja, virsiä virittämiä vyöltä vanhan Väinämöisen, alta ahjon Ilmarisen, päästä kalvan Kaukomielen, Joukahaisen jousen tiestä, Pohjan peltojen periltä, Kalevalan kankahilta.",
   "title": "Häät",
   "location": "Tapahtumapaikka",
   "registration" : "Ilmottautuminen",
@@ -40,7 +40,7 @@
 "de" :  {
   "code" : "Passwort",
   "user" : "Användare",
-  "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim vel dui ac finibus. In mollis imperdiet est, a dictum felis feugiat vitae. Morbi nulla tellus, dignissim in finibus quis, semper id tortor. Duis sagittis neque nec libero laoreet posuere eu eget sapien. Quisque euismod dolor eget accumsan facilisis. Sed vel purus maximus, ornare magna et, lobortis velit. Praesent elementum, neque et rhoncus porttitor, mauris eros condimentum mauris, ac molestie nisi enim hendrerit ante. Nam vel dui dapibus, ultrices erat ac, dapibus augue. Ut ullamcorper ullamcorper purus sit amet gravida. Nulla ac purus ac libero bibendum hendrerit at at magna. Nam id dapibus dolor, bibendum egestas lectus. Sed efficitur arcu a tortor facilisis, at tristique massa ullamcorper. Fusce ullamcorper tellus vitae condimentum dapibus. Sed dignissim nunc in erat tincidunt luctus. Maecenas placerat convallis porta. Integer et interdum urna.",
+  "text" : "Damit Ihr indess erkennt, woher dieser ganze Irrthum gekommen ist, und weshalb man die Lust anklagt und den Schmerz lobet, so will ich Euch Alles eröffnen und auseinander setzen, was jener Begründer der Wahrheit und gleichsam Baumeister des glücklichen Lebens selbst darüber gesagt hat. Niemand, sagt er, verschmähe, oder hasse, oder fliehe die Lust als solche, sondern weil grosse Schmerzen ihr folgen, wenn man nicht mit Vernunft ihr nachzugehen verstehe. Ebenso werde der Schmerz als solcher von Niemand geliebt, gesucht und verlangt, sondern weil mitunter solche Zeiten eintreten, dass man mittelst Arbeiten und Schmerzen eine grosse Lust sich zu verschaften suchen müsse. Um hier gleich bei dem Einfachsten stehen zu bleiben, so würde Niemand von uns anstrengende körperliche Übungen vornehmen, wenn er nicht einen Vortheil davon erwartete. Wer dürfte aber wohl Den tadeln, der nach einer Lust verlangt, welcher keine Unannehmlichkeit folgt, oder der einem Schmerze ausweicht, aus dem keine Lust hervorgeht?",
   "title": "Hochzeit",
   "location" : "Platz",
   "registration" : "Anmelden",
@@ -52,14 +52,14 @@
   "lastname" : "Familname",
   "submit" : "Antwort",
   "correct" : "Correct",
-  "login" : "Login",
-  "admin" : "Admin login",
-  "logout" : "Logout"
+  "login" : "Anmeldung",
+  "admin" : "Admin Anmeldung",
+  "logout" : "Abmeldung"
 },
 "se" : {
   "code" : "Lösenord",
   "user" : "Användare",
-  "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim vel dui ac finibus. In mollis imperdiet est, a dictum felis feugiat vitae. Morbi nulla tellus, dignissim in finibus quis, semper id tortor. Duis sagittis neque nec libero laoreet posuere eu eget sapien. Quisque euismod dolor eget accumsan facilisis. Sed vel purus maximus, ornare magna et, lobortis velit. Praesent elementum, neque et rhoncus porttitor, mauris eros condimentum mauris, ac molestie nisi enim hendrerit ante. Nam vel dui dapibus, ultrices erat ac, dapibus augue. Ut ullamcorper ullamcorper purus sit amet gravida. Nulla ac purus ac libero bibendum hendrerit at at magna. Nam id dapibus dolor, bibendum egestas lectus. Sed efficitur arcu a tortor facilisis, at tristique massa ullamcorper. Fusce ullamcorper tellus vitae condimentum dapibus. Sed dignissim nunc in erat tincidunt luctus. Maecenas placerat convallis porta. Integer et interdum urna.",
+  "text" : "Det finns många olika varianter av Lorem Ipsum, men majoriteten av dessa har ändrats på någotvis. Antingen med inslag av humor, eller med inlägg av ord som knappast ser trovärdiga ut. Skall man använda långa stycken av Lorem Ipsum bör man försäkra sig om att det inte gömmer sig något pinsamt mitt i texten. Lorem Ipsum-generatorer på internet tenderar att repetera Lorem Ipsum-texten styckvis efter behov, något som gör denna sidan till den första riktiga Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformationer osv.",
   "title": "Bröllop",
   "location" : "Plats",
   "registration" : "Registrering",
@@ -70,9 +70,9 @@
   "firstname" : "Förnamn",
   "lastname" : "Efternamn",
   "submit" : "Skicka",
-  "correct" : "Correct",
-  "login" : "Login",
-  "admin" : "Admin login",
-  "logout" : "Logout"
+  "correct" : "Presis",
+  "login" : "Logga in",
+  "admin" : "Admin logga in",
+  "logout" : "Logga ut"
 }
 }

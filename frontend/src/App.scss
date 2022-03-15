@@ -24,7 +24,7 @@
 }
 
 .contentbox.loggedin {
-    height: 95vh;
+    height: 90vh;
     margin-top: 10px;
     margin-bottom: 10px;
     overflow-y: auto;
@@ -73,7 +73,6 @@
     }
 }
 
-
 img {
     float: right;
     margin: 0 0 0 15px;
@@ -82,10 +81,11 @@ img {
 
 
 .logoutbtn {
-    color: blue;
+    color: gray;
     font-size: 14px;
     margin-top: 2vh;
     &:hover{
+        color: blue;
         text-decoration: underline;
         cursor: pointer;
     }
@@ -130,6 +130,16 @@ img {
     transition: opacity 250ms ease-in;
 }
 
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+
 p{
-    margin:0vh;
+    margin:5vh;
 }
