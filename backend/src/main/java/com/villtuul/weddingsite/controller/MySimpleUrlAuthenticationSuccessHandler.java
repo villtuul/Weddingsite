@@ -45,7 +45,7 @@ public class MySimpleUrlAuthenticationSuccessHandler implements AuthenticationSu
                             + targetUrl);
             return;
         }
-
+        response.setHeader("X-forwarded-proto","https");
         redirectStrategy.sendRedirect(request, response, targetUrl);
     }
 

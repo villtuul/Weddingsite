@@ -7,6 +7,7 @@ import LanguageSelector from "./components/LanguageSelector";
 import {Routes, Route, useLocation, useNavigate} from "react-router-dom";
 import {TransitionGroup, CSSTransition, Transition} from "react-transition-group";
 import * as translation from "./translations/translation.json";
+import HttpsRedirect from 'react-https-redirect';
 
 const App = () => {
     const [locale, setLocale] = React.useState("fi");
@@ -20,20 +21,22 @@ const App = () => {
             <CSSTransition unmountOnExit
                            timeout={2000}
                            classNames="icon">
-                <Routes location={location}>
-                    <Route path="/login" element={<LoginPage locale={locale} navigate={navigate} />}/>
-                    <Route exact path="/" element={<LoginPage locale={locale} navigate={navigate} />}/>
-                    <Route exact path="/content" element={<ContentPage locale={locale}/>}/>
-                    <Route exact path="/admin" element={<AdminPage locale={locale}/>}/>
-                </Routes>
+                <HttpsRedirect>
+                    <Routes location={location}>
+                        <Route path="/login" element={<LoginPage locale={locale} navigate={navigate} />}/>
+                        <Route exact path="/" element={<LoginPage locale={locale} navigate={navigate} />}/>
+                        <Route exact path="/content" element={<ContentPage locale={locale}/>}/>
+                        <Route exact path="/admin" element={<AdminPage locale={locale}/>}/>
+                    </Routes>
+                </HttpsRedirect>
             </CSSTransition>
         </TransitionGroup>
 
         <div className="footer">
             <LanguageSelector className ="inline-block" changeLanguage={lan => setLocale(lan)} />
             <a className="logoutbtn inline-block"
-               style={{display: location.pathname === '/login' ? 'none' : 'block' }}
-               onClick={() => {fetch('/perform_logout', {method: 'POST'}).finally(v => {navigate('/login');})}}>
+               style={{display: (location.pathname === '/login' || location.pathname === '/') ? 'none' : 'block' }}
+               onClick={() => {fetch('/perform_logout', {method: 'POST',}).finally(v => {navigate('/login');})}}>
                 {translation[locale].logout}
             </a>
         </div>

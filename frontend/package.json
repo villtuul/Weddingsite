@@ -13,6 +13,7 @@
     "react-datasheet": "^1.4.9",
     "react-datasheet-grid": "^4.1.1",
     "react-dom": "^17.0.2",
+    "react-https-redirect": "^1.1.0",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "react-transition-group": "^4.4.2",
@@ -29,7 +30,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:8080",
   "browserslist": {
     "production": [
       ">0.2%",

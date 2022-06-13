@@ -5,14 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1c36ceb-798f-4900-b5a3-8e5533ef7239" name="Changes" comment="UI fixes">
+      <change afterPath="$PROJECT_DIR$/backend-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/springboot.p12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/icons8-wedding-day-gradient-16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/icons8-wedding-day-gradient-96.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/build/resources/main/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build/resources/main/static/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/resources/main/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build/resources/main/static/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/build/resources/main/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build/resources/main/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/controller/MySimpleUrlAuthenticationSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/controller/MySimpleUrlAuthenticationSuccessHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/controller/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/controller/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/entity/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/villtuul/weddingsite/entity/Guest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ContentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ContentPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CustomInputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CustomInputField.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/RegistrationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/background.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/images/background.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/background650.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/images/background650.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/translations/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/translations/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/images/background.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/images/background650.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +74,18 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="weddingsite" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="weddingsite" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="weddingsite" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -146,7 +179,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Projects/810504LEM" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -156,6 +189,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.run.dashboard.notification" value="false" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -175,7 +209,70 @@
       <recent name="C:\Users\vto\python\tuuliot\public" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.weddingsite:backend [bootRun]">
+  <component name="RunManager" selected="Gradle.weddingsite [clean]">
+    <configuration name="weddingsite [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="weddingsite [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="weddingsite [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="weddingsite:backend [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -197,7 +294,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="weddingsite:backend [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="weddingsite:backend [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
@@ -208,7 +305,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -216,15 +313,6 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
@@ -239,6 +327,15 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
     </configuration>
     <configuration name="GuestsApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="weddingsite.backend.main" />
@@ -263,11 +360,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.weddingsite [clean]" />
+        <item itemvalue="Gradle.weddingsite [build]" />
+        <item itemvalue="Gradle.weddingsite [bootRun]" />
+        <item itemvalue="Gradle.weddingsite:backend [clean]" />
         <item itemvalue="Gradle.weddingsite:backend [bootRun]" />
-        <item itemvalue="Gradle.weddingsite:backend [build]" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
-        <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="HTTP Request.generated-requests | #6" />
       </list>
     </recent_temporary>
   </component>
@@ -317,7 +414,25 @@
       <workItem from="1647024322198" duration="3083000" />
       <workItem from="1647079165668" duration="22156000" />
       <workItem from="1647162195308" duration="38947000" />
-      <workItem from="1647336792455" duration="6128000" />
+      <workItem from="1647336792455" duration="9662000" />
+      <workItem from="1647410798122" duration="602000" />
+      <workItem from="1650361414942" duration="2502000" />
+      <workItem from="1650426199237" duration="609000" />
+      <workItem from="1652209507858" duration="1809000" />
+      <workItem from="1652250526879" duration="598000" />
+      <workItem from="1652293066839" duration="8128000" />
+      <workItem from="1652931123667" duration="1647000" />
+      <workItem from="1652934392740" duration="1912000" />
+      <workItem from="1653322294400" duration="1388000" />
+      <workItem from="1653388384133" duration="2225000" />
+      <workItem from="1653505033662" duration="2669000" />
+      <workItem from="1653723659804" duration="1688000" />
+      <workItem from="1654510120419" duration="7729000" />
+      <workItem from="1654669894061" duration="26000" />
+      <workItem from="1654783564458" duration="7447000" />
+      <workItem from="1654843195259" duration="108000" />
+      <workItem from="1654869848694" duration="23000" />
+      <workItem from="1654870308443" duration="27863000" />
     </task>
     <task id="LOCAL-00001" summary="Added location images">
       <created>1642014984599</created>
@@ -494,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647342442572</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="UI fixes">
+      <created>1647345095705</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1647345095705</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

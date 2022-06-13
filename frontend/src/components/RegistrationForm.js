@@ -72,7 +72,6 @@ const RegistrationForm = ({locale}) => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(json)
         };
-
         fetch('/api/guest', requestOptions)
             .then(response => {
                 console.log(response);
@@ -84,6 +83,7 @@ const RegistrationForm = ({locale}) => {
                     setMessage("");
                 }
             })
+            .catch(e => {console.warn(e);})
     }
 
     return submitted ?

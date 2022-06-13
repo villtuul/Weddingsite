@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-const InputDiv = styled.div`
+const InputDiv = styled.form`
     display: flex;
     flex-direction: column;
     ${props => (props.type === "Code" ? "margin: 5vh 10vh;" : "margin: 2vh 10vh;")} 
@@ -94,6 +94,7 @@ const InputField = ({
                 onChange={e => handleOnChange(e.target.value)}
                 onFocus={handleOnFocus}
                 onBlur={handleOnBlur}
+                autocomplete="off"
                 {...props}
             />
         </InputDiv>
