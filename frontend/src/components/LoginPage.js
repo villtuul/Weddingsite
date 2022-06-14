@@ -6,7 +6,7 @@ import {highlightField} from "../Utils";
 const LoginPage = ({locale,navigate}) => {
     const [input, setInput] = React.useState(null);
 
-    const doSubmit = () => {
+    const doSubmit = (input) => {
         // Sanity check, highlight if pass not given.
         if (input == null ){
             highlightField("[id=Code]");
@@ -30,12 +30,12 @@ const LoginPage = ({locale,navigate}) => {
         fetch(loginUrl, {method: "POST"})
         .then(v => {
             console.log(v)
-//            if(v.status === 200){
-                console.log('Login succesful. Redirecting to ' + v.url)
-                if (user === "user") {navigate("/content")} else {navigate("/admin")}
-  //          } else {
+            navigate(v.url.substring(v.url.lastIndexOf('/')+1))
+
+            if (v.url.indexOf('/login') >= 0) {
                 highlightField("[id=Code]");
-    //        }
+            }
+
             })
         .catch(e => {
             console.warn(e);
@@ -43,14 +43,35 @@ const LoginPage = ({locale,navigate}) => {
 
     }
 
-    let form = <CustomInputField type="Code" id="Code" onChange={val => setInput(val)} label={translation[locale].code}/>;
+    const handleClick = () => {
+        doSubmit(input);
+    }
+
+    useEffect(() => {
+        const keyDownHandler = event => {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                doSubmit(document.getElementById('Code').value);
+            }
+        };
+
+        document.addEventListener('keydown', keyDownHandler);
+
+        return () => {
+            document.removeEventListener('keydown', keyDownHandler);
+        };
+    }, []);
 
     return (
         <div className="contentbox logout">
             <h1>{translation[locale].title}</h1>
-            {form}
+            <CustomInputField type="Code"
+                              id="Code"
+                              value={input}
+                              onChange={val => setInput(val)}
+                              label={translation[locale].code}/>
             <button className="btn"
-                    onClick={doSubmit}>
+                    onClick={handleClick}>
                 {translation[locale].login}
             </button>
         </div>
