@@ -40,7 +40,6 @@
 
 /* Background image and blur */
 %pseudo-block{
-    transition: all 2.0s ease;
     overflow: hidden;
     content: "";
     position: fixed;
@@ -51,6 +50,7 @@
     display: block;
     background-image: url('images/background.jpeg');
     background-size:cover;
+    background-position-x: 70%;
     width: 100%;
     height: 100%;
 }
@@ -148,11 +148,33 @@ p{
     margin:5vh;
     width: min(90%,500px);
     text-align: center;
-    font-family: "plaza reg", "Courier New", Cursive;
+    font-family: 'Dancing Script', cursive;
+    font-size: x-large;
+}
 
+.poem{
+    margin:5vh;
+    width: min(90%,500px);
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: x-large;
 }
 
 h1{
-    font-family: "Allegro", "Courier New", Cursive;
+    font-family: 'Dancing Script', cursive;
+    font-size: 400%;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
     font-size: xxx-large;
+}
+h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: xxx-large;
+}
+.contenttitle{
+    font-family: 'Dancing Script', cursive;
+    font-size: x-large;
+    text-align: center;
+    color: white;
 }
