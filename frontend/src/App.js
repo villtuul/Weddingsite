@@ -33,8 +33,8 @@ const App = () => {
         </TransitionGroup>
 
         <div className="footer">
-            <LanguageSelector className ="inline-block" changeLanguage={lan => setLocale(lan)} />
-            <a className="logoutbtn inline-block"
+            <LanguageSelector changeLanguage={lan => setLocale(lan)} />
+            <a className="logoutbtn"
                style={{display: (location.pathname === '/login' || location.pathname === '/') ? 'none' : 'block' }}
                onClick={() => {fetch('/perform_logout', {method: 'POST',}).finally(v => {navigate('/login');})}}>
                 {translation[locale].logout}

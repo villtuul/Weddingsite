@@ -5,7 +5,6 @@ import "../App.scss";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 const ContentPage = ({locale}) => {
-    let poem = translation[locale].text5;
     return (
         <div className="contentbox loggedin">
             <p>{translation[locale].text1}</p>
@@ -18,9 +17,9 @@ const ContentPage = ({locale}) => {
             <p>{translation[locale].text3}</p>
             <h2>{translation[locale].info}</h2>
             <p>{translation[locale].text7}</p>
-            <p>{translation[locale].text4}</p>
-            <p>{translation[locale].text8}</p>
-            <div className="poem">{Parser(poem)}</div>
+            <p>{Parser(translation[locale].text4)}</p>
+            <p>{Parser(translation[locale].text8)}</p>
+            <div className="poem">{Parser(translation[locale].text5)}</div>
             <p>{translation[locale].text6}</p>
             <h2>{translation[locale].registration}</h2>
             <RegistrationForm locale={locale}/>

@@ -23,7 +23,7 @@
 }
 
 .contentbox.loggedin {
-    height: 90vh;
+    height: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
     overflow-y: auto;
@@ -113,12 +113,7 @@ img {
     padding: 15px 32px;
     height: 100px;
 }
-.sliderimg{
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
 
-}
 .icon-enter {
      opacity: 0;
  }
@@ -138,7 +133,7 @@ img {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    position:absolute;
+    position:fixed;
     bottom:0;
     width:100%;
 }

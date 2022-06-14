@@ -94,7 +94,7 @@ const InputField = ({
                 onChange={e => handleOnChange(e.target.value)}
                 onFocus={handleOnFocus}
                 onBlur={handleOnBlur}
-                autocomplete="off"
+                autoComplete="off"
                 {...props}
             />
         </InputDiv>
