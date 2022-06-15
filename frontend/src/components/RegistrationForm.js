@@ -87,7 +87,7 @@ const RegistrationForm = ({locale}) => {
     }
 
     return submitted ?
-        <button className="btn submit" onClick={() => {setSubmitted(false)}} tabIndex="10">Submit again</button>
+        <button className="btn submit" onClick={() => {setSubmitted(false)}} tabIndex="10">translation[locale].submitagain</button>
         :
         <>
             <CustomInputField type="form" id ="firstname" value={firstName}
